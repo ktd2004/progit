@@ -1,26 +1,26 @@
-#. #-#-#-#-#  01.pot (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  ktemp_01.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from en/01-introduction/01-chapter1.markdown
-#. #-#-#-#-#  02.pot (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  ktemp_02.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from en/02-git-basics/01-chapter2.markdown
-#. #-#-#-#-#  03.pot (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  ktemp_03.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from en/03-git-branching/01-chapter3.markdown
-#. #-#-#-#-#  04.pot (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  ktemp_04.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from en/04-git-server/01-chapter4.markdown
-#. #-#-#-#-#  05.pot (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  ktemp_05.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from en/05-distributed-git/01-chapter5.markdown
-#. #-#-#-#-#  06.pot (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  ktemp_06.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from en/06-git-tools/01-chapter6.markdown
-#. #-#-#-#-#  07.pot (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  ktemp_07.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from en/07-customizing-git/01-chapter7.markdown
-#. #-#-#-#-#  08.pot (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  ktemp_08.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from en/08-git-and-other-scms/01-chapter8.markdown
-#. #-#-#-#-#  09.pot (PACKAGE VERSION)  #-#-#-#-#
+#. #-#-#-#-#  ktemp_09.pot (PACKAGE VERSION)  #-#-#-#-#
 #. extracted from en/09-git-internals/01-chapter9.markdown
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-03 12:40+0900\n"
+"POT-Creation-Date: 2013-01-03 14:09+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1016,9 +1016,8 @@ msgstr ""
 "다음 장에서는 Git의 사용법을 배운다."
 
 #: en/02-git-basics/01-chapter2.markdown:1
-#, fuzzy
 msgid "# Git Basics #"
-msgstr "## Git 기초 ##"
+msgstr "# Git 기초 #"
 
 #: en/02-git-basics/01-chapter2.markdown:3
 msgid ""
@@ -1032,10 +1031,15 @@ msgid ""
 "view changes between commits, and how to push and pull from remote "
 "repositories."
 msgstr ""
+"Git을 사용하는 방법을 알고 싶은데 단 한 챕터밖에 읽을 시간이 없을 때 2장이 딱 맞다. Git을 사용하면서 자주 사용하는 명령어들은 "
+"모두 2장에 등장한다. 2장을 다 읽으면 저장소를 만들고 설정하는 방법, 파일을 추적하거나(Track) 추적을 그만두는 방법, 변경 "
+"내용을 Stage하고 커밋할 수 있는 방법을 알 수 있다. 우리는 또 특정 파일이나 파일의 패턴을 무시하도록 Git을 설정하는 방법, "
+"실수를 쉽고 빠르게 만회하는 방법, 프로젝트의 히스토리를 조회하고 커밋을 서로 비교하는 방법, 리모트 저장소에 Push하고 Pull하는 "
+"방법을 살펴볼 것이다."
 
 #: en/02-git-basics/01-chapter2.markdown:5
 msgid "## Getting a Git Repository ##"
-msgstr ""
+msgstr "## Git 저장소 만들기 ##"
 
 #: en/02-git-basics/01-chapter2.markdown:7
 msgid ""
@@ -1043,20 +1047,22 @@ msgid ""
 "existing project or directory and imports it into Git. The second clones an "
 "existing Git repository from another server."
 msgstr ""
+"보통 프로젝트의 Git 저장소를 만드는 방법은 두 가지다. 하나는 기존에 있는 프로젝트를 Git 저장소로 만드는 방법이고 하나는 다른 "
+"서버에 있는 저장소를 Clone하는 것이다."
 
 #: en/02-git-basics/01-chapter2.markdown:9
 msgid "### Initializing a Repository in an Existing Directory ###"
-msgstr ""
+msgstr "### 이미 있는 디렉토리에서 새 저장소 만들기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:11
 msgid ""
 "If you’re starting to track an existing project in Git, you need to go to "
 "the project’s directory and type"
-msgstr ""
+msgstr "이미 있는 프로젝트를 추적하고 싶을 때, 프로젝트의 디렉토리로 이동해서 다음과 같은 명령을 실행한다."
 
 #: en/02-git-basics/01-chapter2.markdown:13
 msgid "\t$ git init"
-msgstr ""
+msgstr "\t$ git init"
 
 #: en/02-git-basics/01-chapter2.markdown:15
 msgid ""
@@ -1066,6 +1072,9 @@ msgid ""
 "information about exactly what files are contained in the `.git` directory "
 "you just created.)"
 msgstr ""
+"이 명령은 `.git`이라는 하위디렉토리를 만든다. `.git` 디렉토리에는 저장소를 이루는 뼈대가 되는 파일(Skeleton)이 들어 "
+"있다(`.git` 디렉토리가 막 만들어진 직후 어떤 파일이 포함되는지에 대한 자세한 내용은 9장에서 다룬다). 하지만, 위 명령만으로는 "
+"아직 Git은 프로젝트의 어떤 파일도 추적하지 않는다."
 
 #: en/02-git-basics/01-chapter2.markdown:17
 msgid ""
@@ -1074,6 +1083,8 @@ msgid ""
 "initial commit. You can accomplish that with a few `git add` commands that "
 "specify the files you want to track, followed by a commit:"
 msgstr ""
+"그리고 파일들의 버전을 관리하려면 Git이 파일을 관리하도록 저장소에 추가하고 최초로 커밋한다. `git add` 명령으로 여러 파일을 "
+"추가하고 커밋한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:19
 msgid ""
@@ -1081,16 +1092,19 @@ msgid ""
 "\t$ git add README\n"
 "\t$ git commit -m 'initial project version'"
 msgstr ""
+"\t$ git add *.c\n"
+"\t$ git add README\n"
+"\t$ git commit -m 'initial project version'"
 
 #: en/02-git-basics/01-chapter2.markdown:23
 msgid ""
 "We’ll go over what these commands do in just a minute. At this point, you "
 "have a Git repository with tracked files and an initial commit."
-msgstr ""
+msgstr "1분도 되지 않는 짧은 시간에 위의 명령어들을 실행하여 Git 저장소를 만들었고 파일을 추적하게 하였다."
 
 #: en/02-git-basics/01-chapter2.markdown:25
 msgid "### Cloning an Existing Repository ###"
-msgstr ""
+msgstr "### 이미 있는 저장소를 Clone하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:27
 msgid ""
@@ -1106,16 +1120,23 @@ msgid ""
 "but all the versioned data would be there — see *Chapter 4* for more "
 "details)."
 msgstr ""
+"다른 프로젝트에 참여하거나(Contribute) Git 저장소를 복사하고 싶을 때 `git clone` 명령을 사용한다. 이미 "
+"Subversion 같은 VCS에 익숙하면 `checkout`이 아니라 `clone` 이라는 점이 눈에 띌 것이다. Subversion과 "
+"git의 가장 큰 차이점은 서버에 있는 모든 데이터를 복사한다는 것이다. `git clone`을 실행하면 프로젝트 히스토리를 전부 "
+"받아온다. 실제로 서버의 디스크가 망가져도 클라이언트들의 저장소 중에서 아무거나 하나 가져다가 복구할 수 있다(서버에 특화된 설정은 "
+"복구하지 못하지만 모든 데이터는 복구된다 - 4장에서 좀 더 자세히 다룬다)."
 
 #: en/02-git-basics/01-chapter2.markdown:29
 msgid ""
 "You clone a repository with `git clone [url]`. For example, if you want to "
 "clone the Ruby Git library called Grit, you can do so like this:"
 msgstr ""
+"`git clone [url]`로 저장소를 Clone한다. 예를 들어, Ruby용 Git 라이브러리인 Grit을 Clone하려면 다음과 "
+"같이 한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:31
 msgid "\t$ git clone git://github.com/schacon/grit.git"
-msgstr ""
+msgstr "\t$ git clone git://github.com/schacon/grit.git"
 
 #: en/02-git-basics/01-chapter2.markdown:33
 msgid ""
@@ -1126,16 +1147,20 @@ msgid ""
 "to clone the repository into a directory named something other than grit, "
 "you can specify that as the next command-line option:"
 msgstr ""
+"이 명령은 \"grit\"이라는 디렉토리를 만들고 그 안에 `.git` 디렉토리를 만든다. 그리고 저장소의 데이터도 모두 가져오고 자동으로 "
+"가장 최신 버전을 Checkout한다. `grit` 디렉토리로 이동하면 Checkout으로 생성된 파일을 볼 수 있고 당장 하고자 하는 "
+"일을 바로 시작할 수 있다. 다음과 같은 명령을 사용하여 저장소를 Clone하면 \"grit\"이 아니라 다른 이름으로 Clone할 수 "
+"있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:35
 msgid "\t$ git clone git://github.com/schacon/grit.git mygrit"
-msgstr ""
+msgstr "\t$ git clone git://github.com/schacon/grit.git mygrit"
 
 #: en/02-git-basics/01-chapter2.markdown:37
 msgid ""
 "That command does the same thing as the previous one, but the target "
 "directory is called `mygrit`."
-msgstr ""
+msgstr "디렉토리 이름이 `mygrit`이라는 것만 빼면 이 명령의 결과와 앞선 명령의 결과는 같다."
 
 #: en/02-git-basics/01-chapter2.markdown:39
 msgid ""
@@ -1145,10 +1170,13 @@ msgid ""
 "will introduce all of the available options the server can set up to access "
 "your Git repository and the pros and cons of each."
 msgstr ""
+"Git은 다양한 프로토콜을 지원한다. 이제까지는 `git://` 프로토콜을 사용했지만 `http(s)://`를 사용할 수도 있고 "
+"`user@server:/path.git`처럼 SSH 프로토콜을 사용할 수도 있다. 자세한 내용은 4장에서 다룬다. 4장에서는 각 "
+"프로토콜의 장단점도 알아보고 Git 저장소에 접근하는 방법들을 알아본다."
 
 #: en/02-git-basics/01-chapter2.markdown:41
 msgid "## Recording Changes to the Repository ##"
-msgstr ""
+msgstr "## 수정하고 저장소에 저장하기 ##"
 
 #: en/02-git-basics/01-chapter2.markdown:43
 msgid ""
@@ -1157,6 +1185,8 @@ msgid ""
 "of those changes into your repository each time the project reaches a state "
 "you want to record."
 msgstr ""
+"Git 저장소를 하나 만들고 일할 수 있도록 Checkout했다. 이제는 파일을 수정하고 파일의 Snapshot을 커밋해 보자. 파일들을 "
+"수정하다가 저장하고 싶으면 Snapshot을 커밋한다."
 
 #: en/02-git-basics/01-chapter2.markdown:45
 msgid ""
@@ -1168,6 +1198,12 @@ msgid ""
 "you first clone a repository, all of your files will be tracked and "
 "unmodified because you just checked them out and haven’t edited anything."
 msgstr ""
+"작업 디렉토리의 모든 파일은 크게 Tracked(관리대상임)와 Untracked(관리대상이 아님)로 나눈다. Tracked 파일은 이미 "
+"Snapshot에 포함돼 있던 파일이다. Tracked 파일들은 또 Unmodified(수정하지 않음)와 Modified(수정함) 그리고 "
+"Staged(커밋을 하면 현재 수정 사항을 저장소에 기록함) 상태 중 하나이다. 그리고 나머지 파일들은 모두 Untracked "
+"파일이다. Untracked 파일은 작업 디렉토리에 있는 모든 파일이 Snapshot에 포함돼 있는 것은 아니고 Staging Area에 "
+"있는 것도 아니다. 처음 저장소를 Clone하고 나면 모든 파일은 Tracked이면서 Unmodified 상태이다. Git은 저장소를 "
+"Clone하면 자동으로 파일을 Checkout하고 아직 아무것도 편집하지 않은 상태다."
 
 #: en/02-git-basics/01-chapter2.markdown:47
 msgid ""
@@ -1176,16 +1212,20 @@ msgid ""
 "your staged changes, and the cycle repeats. This lifecycle is illustrated in "
 "Figure 2-1."
 msgstr ""
+"마지막 커밋 이후 아직 아무것도 수정하지 않은 상태에서 어떤 파일이 수정되면 Git은 그 즉시 파일을 Modified 상태로 인식한다. "
+"그리고 이 수정한 파일을 Stage하고 Staged 상태인 파일들을 커밋한다. 이 라이프사이클을 그림 2-1처럼 계속 반복한다."
 
 #: en/02-git-basics/01-chapter2.markdown:49
 msgid ""
 "Insert 18333fig0201.png\n"
 "Figure 2-1. The lifecycle of the status of your files."
 msgstr ""
+"Insert 18333fig0201.png\n"
+"그림 2-1. 파일의 라이프사이클"
 
 #: en/02-git-basics/01-chapter2.markdown:52
 msgid "### Checking the Status of Your Files ###"
-msgstr ""
+msgstr "### 파일의 상태 확인하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:54
 msgid ""
@@ -1193,6 +1233,8 @@ msgid ""
 "`git status` command. If you run this command directly after a clone, you "
 "should see something like this:"
 msgstr ""
+"파일의 상태를 확인하려면 보통 `git status` 명령을 사용한다. Clone한 후에 바로 이 명령을 실행하면 다음과 같은 메시지를 "
+"볼 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:56
 #: en/06-git-tools/01-chapter6.markdown:441
@@ -1201,6 +1243,9 @@ msgid ""
 "\t# On branch master\n"
 "\tnothing to commit (working directory clean)"
 msgstr ""
+"\t$ git status\n"
+"\t# On branch master\n"
+"\tnothing to commit (working directory clean)"
 
 #: en/02-git-basics/01-chapter2.markdown:60
 msgid ""
@@ -1210,6 +1255,9 @@ msgid ""
 "now, that is always `master`, which is the default; you won’t worry about it "
 "here. The next chapter will go over branches and references in detail."
 msgstr ""
+"위의 내용은 파일을 하나도 수정하지 않았다는 것을 말해준다. 즉, Tracked와 Modified 상태의 파일이 없다. Untracked "
+"파일은 아직 없어서 목록에 나타나지 않는다. 그리고 현재 작업 중인 브랜치를 알려준다. 기본 브랜치가 master이기 때문에 현재 "
+"master로 나오는 것이다. 브랜치 관련 내용은 차차 알아가자. 다음 장에서 브랜치와 레퍼런스에 대해 자세히 다룬다."
 
 #: en/02-git-basics/01-chapter2.markdown:62
 msgid ""
@@ -1217,6 +1265,8 @@ msgid ""
 "file didn’t exist before, and you run `git status`, you see your untracked "
 "file like so:"
 msgstr ""
+"프로젝트에 README 파일을 만들어보자. README 파일은 새로 만든 파일이기 때문에 `git status`를 실행하면 "
+"Untracked에 들어 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:64
 msgid ""
@@ -1230,6 +1280,15 @@ msgid ""
 "\tnothing added to commit but untracked files present (use \"git add\" to "
 "track)"
 msgstr ""
+"\t$ vim README\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Untracked files:\n"
+"\t#   (use \"git add <file>...\" to include in what will be committed)\n"
+"\t#\n"
+"\t#\tREADME\n"
+"\tnothing added to commit but untracked files present (use \"git add\" to "
+"track)"
 
 #: en/02-git-basics/01-chapter2.markdown:73
 msgid ""
@@ -1241,26 +1300,31 @@ msgid ""
 "generated binary files or other files that you did not mean to include. You "
 "do want to start including README, so let’s start tracking the file."
 msgstr ""
+"README 파일은 `Untracked files` 부분에 속해 있는데 이것은 README 파일이 Untracked 상태라는 것을 "
+"말한다. Git은 Untracked 파일을 이전 Snapshot(커밋)에는 없는 파일이라고 본다. Git은 파일이 Tracked 상태가 "
+"되기 전까지는 절대 그 파일들을 커밋하지 않는다. 그래서 일하는 동안 생성된 파일인 바이너리 파일 같은 것을 커밋하는 실수는 하지 않게 "
+"된다. README파일을 포함해 직접 Tracked 상태로 만들어 보자."
 
 #: en/02-git-basics/01-chapter2.markdown:75
 msgid "### Tracking New Files ###"
-msgstr ""
+msgstr "### 새 파일을 추적하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:77
 msgid ""
 "In order to begin tracking a new file, you use the command `git add`. To "
 "begin tracking the `README` file, you can run this:"
-msgstr ""
+msgstr "`git add` 명령을 사용하여 새로운 파일을 추적할 수 있다. 다음 명령을 실행하면 Git은 README 파일을 추적한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:79
 msgid "\t$ git add README"
-msgstr ""
+msgstr "\t$ git add README"
 
 #: en/02-git-basics/01-chapter2.markdown:81
 msgid ""
 "If you run your status command again, you can see that your `README` file is "
 "now tracked and staged:"
 msgstr ""
+"`git status` 명령을 다시 실행하면 README 파일이 Tracked 상태이면서 Staged 상태라는 것을 확인할 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:83
 msgid ""
@@ -1272,6 +1336,13 @@ msgid ""
 "\t#\tnew file:   README\n"
 "\t#"
 msgstr ""
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#\tnew file:   README\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:91
 msgid ""
@@ -1283,10 +1354,15 @@ msgid ""
 "command takes a path name for either a file or a directory; if it’s a "
 "directory, the command adds all the files in that directory recursively."
 msgstr ""
+"'Changes to be committed' 에 들어 있는 파일은 Staged 상태라는 것을 의미한다. 커밋하면 `git add`를 "
+"실행한 시점의 파일이 커밋되어 저장소 히스토리에 남는다. 앞에서 `git init` 명령을 실행했을 때, 그 다음 `git add "
+"(files)` 명령을 실행했던 걸 기억할 것이다. 이것은 작업 디렉토리에 있는 파일들을 추적하기 시작하게 하였다. `git add` "
+"명령은 파일 또는 디렉토리의 경로명을 인자로 받는다; 만일 디렉토리를 인자로 줄 경우, 그 디렉토리 아래에 있는 모든 파일들을 재귀적으로 "
+"추가한다."
 
 #: en/02-git-basics/01-chapter2.markdown:93
 msgid "### Staging Modified Files ###"
-msgstr ""
+msgstr "### Modified 상태의 파일을 Stage하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:95
 msgid ""
@@ -1294,6 +1370,8 @@ msgid ""
 "tracked file called `benchmarks.rb` and then run your `status` command "
 "again, you get something that looks like this:"
 msgstr ""
+"이미 Tracked 상태인 파일을 수정하는 법을 알아보자. `benchmarks.rb`라는 파일을 수정하고 나서 `git status` "
+"명령을 다시 실행하면 결과는 다음과 같다:"
 
 #: en/02-git-basics/01-chapter2.markdown:97
 msgctxt "en/02-git-basics/01-chapter2.markdown:97"
@@ -1311,6 +1389,18 @@ msgid ""
 "\t#\tmodified:   benchmarks.rb\n"
 "\t#"
 msgstr ""
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#\tnew file:   README\n"
+"\t#\n"
+"\t# Changes not staged for commit:\n"
+"\t#   (use \"git add <file>...\" to update what will be committed)\n"
+"\t#\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:110
 msgid ""
@@ -1322,6 +1412,10 @@ msgid ""
 "files as resolved). Let’s run `git add` now to stage the `benchmarks.rb` "
 "file, and then run `git status` again:"
 msgstr ""
+"이 `benchmarks.rb` 파일은 `Changes not staged for commit`에 있다. 이것은 수정한 파일이 "
+"Tracked 상태이지만 아직 Staged 상태는 아니라는 것이다. Staged 상태로 만들려면 `git add` 명령을 실행해야 한다. "
+"`git add`는 파일을 새로 추적할 때도 사용하고 수정한 파일을 Staged 상태로 만드는데에도 사용한다. `git add`를 "
+"실행하여 benchmarks.rb 파일을 Staged 상태로 만들고 `git status` 명령으로 결과를 확인해보자:"
 
 #: en/02-git-basics/01-chapter2.markdown:112
 msgctxt "en/02-git-basics/01-chapter2.markdown:112"
@@ -1336,6 +1430,15 @@ msgid ""
 "\t#\tmodified:   benchmarks.rb\n"
 "\t#"
 msgstr ""
+"\t$ git add benchmarks.rb\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#\tnew file:   README\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:122
 msgid ""
@@ -1344,6 +1447,9 @@ msgid ""
 "rb` before you commit it. You open it again and make that change, and you’re "
 "ready to commit. However, let’s run `git status` one more time:"
 msgstr ""
+"두 파일 모두 Staged 상태이므로 다음 커밋에 포함된다. 하지만, 아직 더 수정해야 한다는 것을 알게 되어 바로 커밋하지 못하는 "
+"상황이 되었다고 하자. 이 상황에서 benchmark.rb 파일을 열고 수정한다. 이제 아마 당신은 커밋할 준비가 다 됐다고 생각할 "
+"것이다. 하지만, Git에게는 그렇지 않다. `git status` 명령으로 파일의 상태를 다시 확인해보자:"
 
 #: en/02-git-basics/01-chapter2.markdown:124
 msgid ""
@@ -1362,6 +1468,20 @@ msgid ""
 "\t#\tmodified:   benchmarks.rb\n"
 "\t#"
 msgstr ""
+"\t$ vim benchmarks.rb\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#\tnew file:   README\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#\n"
+"\t# Changes not staged for commit:\n"
+"\t#   (use \"git add <file>...\" to update what will be committed)\n"
+"\t#\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:139
 msgid ""
@@ -1374,6 +1494,10 @@ msgid ""
 "run `git add`, you have to run `git add` again to stage the latest version "
 "of the file:"
 msgstr ""
+"헉! benchmarks.rb가 Staged 상태이면서 동시에 Unstaged 상태로 나온다. 어떻게 이런 일이 가능할까? `git "
+"add` 명령을 실행하면 Git은 파일을 바로 Staged 상태로 만든다. 지금 이 시점에서 커밋을 하면 `git commit` 명령을 "
+"실행하는 시점의 버전이 커밋되는 것이 아니라 마지막으로 `git add` 명령을 실행했을 때의 버전이 커밋된다. 그러니까 `git "
+"add` 명령을 실행 후에 또 파일을 수정하면 `git add` 명령을 다시 실행하여 최신 버전을 Staged 상태로 만들어야 한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:141
 msgctxt "en/02-git-basics/01-chapter2.markdown:141"
@@ -1388,10 +1512,19 @@ msgid ""
 "\t#\tmodified:   benchmarks.rb\n"
 "\t#"
 msgstr ""
+"\t$ git add benchmarks.rb\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#\tnew file:   README\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:151
 msgid "### Ignoring Files ###"
-msgstr ""
+msgstr "### 파일 무시하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:153
 msgid ""
@@ -1401,6 +1534,9 @@ msgid ""
 "such cases, you can create a file listing patterns to match them named `."
 "gitignore`.  Here is an example `.gitignore` file:"
 msgstr ""
+"어떤 파일들은 Git이 자동으로 추가하지도 Untracked 파일이라고 보여줄 필요가 없다. 보통 로그 파일이나 빌드 시스템이 자동으로 "
+"생성한 파일들이 그렇다. 그런 파일을 무시하려면 `.gitignore` 파일을 만들고 그 안에 무시할 파일 패턴을 적는다. 다음은 "
+"`.gitignore` 파일의 예이다:"
 
 #: en/02-git-basics/01-chapter2.markdown:155
 msgid ""
@@ -1408,6 +1544,9 @@ msgid ""
 "\t*.[oa]\n"
 "\t*~"
 msgstr ""
+"\t$ cat .gitignore\n"
+"\t*.[oa]\n"
+"\t*~"
 
 #: en/02-git-basics/01-chapter2.markdown:159
 msgid ""
@@ -1420,12 +1559,17 @@ msgid ""
 "you get going is generally a good idea so you don’t accidentally commit "
 "files that you really don’t want in your Git repository."
 msgstr ""
+"첫번째 줄은 확장자가 `.o` 나 `.a`인 파일을 Git이 무시하라는 것이고 둘째 줄은 `~`로 끝나는 모든 파일을 무시하라는 것이다. "
+"`.o`와 `.a`는 각각 빌드 시스템이 만들어내는 오브젝트와 아카이브 파일이고 `~`로 끝나는 파일은 Emacs나 VI 같은 텍스트 "
+"편집기들이 임시로 만들어내는 파일이다. 또 log, tmp, pid 같은 디렉토리나, 자동으로 생성하는 문서 같은 것들도 추가할 수 "
+"있다. `.gitignore` 파일은 보통 처음에 만들어 두는 것이 편리하다. 그래서 Git 저장소에 커밋하고 싶지 않은 파일을 실수로 "
+"커밋하는 일을 방지한다."
 
 #: en/02-git-basics/01-chapter2.markdown:161
 msgid ""
 "The rules for the patterns you can put in the `.gitignore` file are as "
 "follows:"
-msgstr ""
+msgstr ".gitignore 파일에 입력하는 패턴은 다음의 규칙을 따른다:"
 
 #: en/02-git-basics/01-chapter2.markdown:163
 msgid ""
@@ -1434,6 +1578,10 @@ msgid ""
 "*\tYou can end patterns with a forward slash (`/`) to specify a directory.\n"
 "*\tYou can negate a pattern by starting it with an exclamation point (`!`)."
 msgstr ""
+" * 아무것도 없는 줄이나, `#`로 시작하는 줄은 무시한다.\n"
+" * 표준 Glob 패턴을 사용한다.\n"
+" * 디렉토리는 슬래시(`/`)를 끝에 사용하는 것으로 표현한다.\n"
+" * 느낌표(`!`)로 시작하는 패턴은 해당 패턴의 파일을 무시하지 않는다."
 
 #: en/02-git-basics/01-chapter2.markdown:168
 msgid ""
@@ -1444,10 +1592,14 @@ msgid ""
 "separated by a hyphen(`[0-9]`) matches any character in the range (in this "
 "case 0 through 9) ."
 msgstr ""
+"Glob 패턴은 정규표현식을 단순하게 만든 것으로 생각하면 되고 보통 쉘에서 많이 사용한다. 애스터리스크(`*`)는 문자가 하나도 없거나 "
+"하나 이상을 의미하고, `[abc]`는 중괄호 안에 있는 문자 중 하나를 의미한다(그러니까 이 경우에는 a, b, c). "
+"물음표(`?`)는 문자 하나를 말하고, `[0-9]`처럼 중괄호 안의 캐릭터 사이에 하이픈(`-`)을 사용하면 그 캐릭터 사이에 있는 "
+"문자 하나를 말한다."
 
 #: en/02-git-basics/01-chapter2.markdown:170
 msgid "Here is another example `.gitignore` file:"
-msgstr ""
+msgstr "다음은 .gitignore 파일의 예이다:"
 
 #: en/02-git-basics/01-chapter2.markdown:172
 msgid ""
@@ -1459,10 +1611,16 @@ msgid ""
 "\tbuild/    # ignore all files in the build/ directory\n"
 "\tdoc/*.txt # ignore doc/notes.txt, but not doc/server/arch.txt"
 msgstr ""
+"\t# a comment - 이 줄은 무시한다.\n"
+"\t*.a       # 확장자가 .a인 파일 무시\n"
+"\t!lib.a    # 윗 줄에서 확장자가 .a인 파일은 무시하게 했지만 lib.a는 무시하지 않는다.\n"
+"\t/TODO     # 루트 디렉토리에 있는 TODO파일은 무시하고 subdir/TODO처럼 하위디렉토리에 있는 파일은 무시하지 않는다.\n"
+"\tbuild/    # build/ 디렉토리에 있는 모든 파일은 무시한다.\n"
+"\tdoc/*.txt # `doc/notes.txt`같은 파일은 무시하고 doc/server/arch.txt같은 파일은 무시하지 않는다."
 
 #: en/02-git-basics/01-chapter2.markdown:179
 msgid "### Viewing Your Staged and Unstaged Changes ###"
-msgstr ""
+msgstr "### Staged와 Unstaged 상태의 변경 내용을 보기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:181
 msgid ""
@@ -1474,6 +1632,10 @@ msgid ""
 "commit? Although `git status` answers those questions very generally, `git "
 "diff` shows you the exact lines added and removed — the patch, as it were."
 msgstr ""
+"단순히 파일이 변경됐다는 사실이 아니라 어떤 내용이 변경됐는지 살펴보기엔 `git status` 명령은 부족해서 `git diff` "
+"명령을 사용해야 한다. 일반적으로 우리는 '수정했지만, 아직 Staged 파일이 아닌것?'과 '어떤 파일이 Staged 상태인지?'가 "
+"궁금하기 때문에 `git status` 명령으로도 충분하다. `git diff`는 Patch처럼 어떤 라인을 추가했고 삭제했는지 알아야 "
+"할 때에 사용한다. `git diff`는 나중에 더 자세히 다룬다."
 
 #: en/02-git-basics/01-chapter2.markdown:183
 msgid ""
@@ -1481,6 +1643,8 @@ msgid ""
 "`benchmarks.rb` file without staging it. If you run your `status` command, "
 "you once again see something like this:"
 msgstr ""
+"README 파일을 수정하고 Staged 상태로 만들어 보자. benchmarks.rb 파일은 그냥 수정만 해둔다. 이 상태에서 `git "
+"status` 명령을 실행하면 다음과 같은 메시지를 볼 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:185
 msgctxt "en/02-git-basics/01-chapter2.markdown:185"
@@ -1498,12 +1662,24 @@ msgid ""
 "\t#\tmodified:   benchmarks.rb\n"
 "\t#"
 msgstr ""
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#\tnew file:   README\n"
+"\t#\n"
+"\t# Changes not staged for commit:\n"
+"\t#   (use \"git add <file>...\" to update what will be committed)\n"
+"\t#\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:198
 msgid ""
 "To see what you’ve changed but not yet staged, type `git diff` with no other "
 "arguments:"
-msgstr ""
+msgstr "`git diff` 명령을 실행하면 수정했지만 아직 staged 상태가 아닌 파일을 비교해 볼 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:200
 msgid ""
@@ -1516,6 +1692,14 @@ msgid ""
 "\t           @commit.parents[0].parents[0].parents[0]\n"
 "\t         end"
 msgstr ""
+"\t$ git diff\n"
+"\tdiff --git a/benchmarks.rb b/benchmarks.rb\n"
+"\tindex 3cb747f..da65585 100644\n"
+"\t--- a/benchmarks.rb\n"
+"\t+++ b/benchmarks.rb\n"
+"\t@@ -36,6 +36,10 @@ def main\n"
+"\t           @commit.parents[0].parents[0].parents[0]\n"
+"\t         end"
 
 #: en/02-git-basics/01-chapter2.markdown:209
 msgid ""
@@ -1527,6 +1711,13 @@ msgid ""
 "\t           log = git.commits('master', 15)\n"
 "\t           log.size"
 msgstr ""
+"\t+        run_code(x, 'commits 1') do\n"
+"\t+          git.commits.size\n"
+"\t+        end\n"
+"\t+\n"
+"\t         run_code(x, 'commits 2') do\n"
+"\t           log = git.commits('master', 15)\n"
+"\t           log.size"
 
 #: en/02-git-basics/01-chapter2.markdown:217
 msgid ""
@@ -1534,6 +1725,8 @@ msgid ""
 "staging area. The result tells you the changes you’ve made that you haven’t "
 "yet staged."
 msgstr ""
+"이 명령은 작업 디렉토리에 있는 것과 Staging Area에 있는 것을 비교한다. 그래서 수정하고 아직 Staged 상태가 아닌 것들을 "
+"보여준다."
 
 #: en/02-git-basics/01-chapter2.markdown:219
 msgid ""
@@ -1542,6 +1735,9 @@ msgid ""
 "also use `git diff --staged`, which may be easier to remember.) This command "
 "compares your staged changes to your last commit:"
 msgstr ""
+"만약 커밋하려고 Staging Area에 넣은 파일의 변경 부분을 보고 싶으면 `git diff --cached` 옵션을 사용한다(Git "
+"버전 1.6.1부터는 좀 더 기억하기 쉽게 `git diff --staged`로도 사용할 수 있다). 이 명령은 Staging "
+"Area와 저장소에 커밋한 것을 비교한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:221
 msgid ""
@@ -1558,6 +1754,18 @@ msgid ""
 "\t+\n"
 "\t+Grit is a Ruby library for extracting information from a Git repository"
 msgstr ""
+"\t$ git diff --cached\n"
+"\tdiff --git a/README b/README\n"
+"\tnew file mode 100644\n"
+"\tindex 0000000..03902a1\n"
+"\t--- /dev/null\n"
+"\t+++ b/README2\n"
+"\t@@ -0,0 +1,5 @@\n"
+"\t+grit\n"
+"\t+ by Tom Preston-Werner, Chris Wanstrath\n"
+"\t+ http://github.com/mojombo/grit\n"
+"\t+\n"
+"\t+Grit is a Ruby library for extracting information from a Git repository"
 
 #: en/02-git-basics/01-chapter2.markdown:234
 msgid ""
@@ -1566,6 +1774,9 @@ msgid ""
 "be confusing, because if you’ve staged all of your changes, `git diff` will "
 "give you no output."
 msgstr ""
+"꼭 잊지 말아야 할 것이 있는데 `git diff` 명령은 마지막으로 커밋한 후에 수정한 것을 보여주지 않는다. `git diff`는 "
+"Unstaged 상태인 것들만 보여준다. 이 부분은 조금 헷갈릴 수도 있는데, 수정한 파일을 모두 Staging Area에 넣었다면 "
+"`git diff` 명령은 아무것도 출력하지 않는다."
 
 #: en/02-git-basics/01-chapter2.markdown:236
 msgid ""
@@ -1573,6 +1784,8 @@ msgid ""
 "you can use `git diff` to see the changes in the file that are staged and "
 "the changes that are unstaged:"
 msgstr ""
+"benchmarks.rb 파일을 Stage한 후 다시 수정해도 `git diff` 명령을 사용할 수 있다. 이 경우 Staged 상태인 "
+"것과 Unstaged 상태인 것을 비교한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:238
 msgid ""
@@ -1590,10 +1803,23 @@ msgid ""
 "\t#\tmodified:   benchmarks.rb\n"
 "\t#"
 msgstr ""
+"\t$ git add benchmarks.rb\n"
+"\t$ echo '# test line' >> benchmarks.rb\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t#\n"
+"\t# Changes to be committed:\n"
+"\t#\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#\n"
+"\t# Changes not staged for commit:\n"
+"\t#\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:252
 msgid "Now you can use `git diff` to see what is still unstaged"
-msgstr ""
+msgstr "`git diff` 명령으로 Unstaged 상태인 변경 부분을 확인해 볼 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:254
 msgid ""
@@ -1605,16 +1831,25 @@ msgid ""
 "\t@@ -127,3 +127,4 @@ end\n"
 "\t main()"
 msgstr ""
+"\t$ git diff\n"
+"\tdiff --git a/benchmarks.rb b/benchmarks.rb\n"
+"\tindex e445e28..86b2f7c 100644\n"
+"\t--- a/benchmarks.rb\n"
+"\t+++ b/benchmarks.rb\n"
+"\t@@ -127,3 +127,4 @@ end\n"
+"\t main()"
 
 #: en/02-git-basics/01-chapter2.markdown:262
 msgid ""
 "\t ##pp Grit::GitRuby.cache_client.stats\n"
 "\t+# test line"
 msgstr ""
+"\t ##pp Grit::GitRuby.cache_client.stats\n"
+"\t+# test line"
 
 #: en/02-git-basics/01-chapter2.markdown:265
 msgid "and `git diff --cached` to see what you’ve staged so far:"
-msgstr ""
+msgstr "Staged 상태인 파일은 `git diff --cached` 옵션으로 확인한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:267
 msgid ""
@@ -1627,6 +1862,14 @@ msgid ""
 "\t          @commit.parents[0].parents[0].parents[0]\n"
 "\t        end"
 msgstr ""
+"\t$ git diff --cached\n"
+"\tdiff --git a/benchmarks.rb b/benchmarks.rb\n"
+"\tindex 3cb747f..e445e28 100644\n"
+"\t--- a/benchmarks.rb\n"
+"\t+++ b/benchmarks.rb\n"
+"\t@@ -36,6 +36,10 @@ def main\n"
+"\t          @commit.parents[0].parents[0].parents[0]\n"
+"\t        end"
 
 #: en/02-git-basics/01-chapter2.markdown:276
 msgid ""
@@ -1638,10 +1881,17 @@ msgid ""
 "\t          log = git.commits('master', 15)\n"
 "\t          log.size"
 msgstr ""
+"\t+        run_code(x, 'commits 1') do\n"
+"\t+          git.commits.size\n"
+"\t+        end\n"
+"\t+\n"
+"\t        run_code(x, 'commits 2') do\n"
+"\t          log = git.commits('master', 15)\n"
+"\t          log.size"
 
 #: en/02-git-basics/01-chapter2.markdown:284
 msgid "### Committing Your Changes ###"
-msgstr ""
+msgstr "### 변경사항 커밋하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:286
 msgid ""
@@ -1654,10 +1904,14 @@ msgid ""
 "was staged, so you’re ready to commit your changes. The simplest way to "
 "commit is to type `git commit`:"
 msgstr ""
+"수정한 것을 커밋하기 위해 Staging Area에 파일을 정리했다. Unstaged 상태의 파일은 커밋되지 않는다는 것을 기억해야 "
+"한다. Git은 생성하거나 수정하고 나서 `git add` 명령으로 추가하지 않은 파일은 커밋하지 않는다. 그 파일은 여전히 "
+"Modified 상태로 남아 있다.커밋하기 전에 `git status` 명령으로 모든 것이 Staged 상태인지 확인할 수 있다. 그리고 "
+"`git commit`을 실행하여 커밋한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:289
 msgid "\t$ git commit"
-msgstr ""
+msgstr "\t$ git commit"
 
 #: en/02-git-basics/01-chapter2.markdown:291
 msgid ""
@@ -1666,10 +1920,13 @@ msgid ""
 "configure it with whatever you want using the `git config --global core."
 "editor` command as you saw in *Chapter 1*)."
 msgstr ""
+"Git 설정에 지정된 편집기가 다음과 같이 실행되고, 다음과 같은 텍스트가 자동으로 포함된다(아래 예제는 Vim 편집기의 화면이다). 이 "
+"편집기는 쉘의 $EDITOR 환경 변수에 등록된 편집기이고 보통은 Vim이나 Emacs을 사용한다. 또 1장에서 설명했듯이 `git "
+"config --global core.editor` 명령으로 어떤 편집기를 사용할지 설정할 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:293
 msgid "The editor displays the following text (this example is a Vim screen):"
-msgstr ""
+msgstr "편집기는 아래와 같은 내용을 표시한다(아래 예제는 Vim 편집기의 경우):"
 
 #: en/02-git-basics/01-chapter2.markdown:295
 msgid ""
@@ -1686,6 +1943,18 @@ msgid ""
 "\t~\n"
 "\t\".git/COMMIT_EDITMSG\" 10L, 283C"
 msgstr ""
+"\t# Please enter the commit message for your changes. Lines starting\n"
+"\t# with '#' will be ignored, and an empty message aborts the commit.\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#       new file:   README\n"
+"\t#       modified:   benchmarks.rb\n"
+"\t~\n"
+"\t~\n"
+"\t~\n"
+"\t\".git/COMMIT_EDITMSG\" 10L, 283C"
 
 #: en/02-git-basics/01-chapter2.markdown:308
 msgid ""
@@ -1699,12 +1968,15 @@ msgid ""
 "your commit with that commit message (with the comments and diff stripped "
 "out)."
 msgstr ""
+"자동으로 생성되는 커밋 메시지는 첫 줄은 비어 있고 둘째 줄부터 `git status` 명령의 결과가 채워진다. 커밋한 내용을 쉽게 "
+"기억할 수 있도록 이 메시지를 포함할 수도 있고 메시지를 전부 지우고 새로 작성할 수 있다(수정한 내용을 좀 더 구체적으로 남겨 둘 수 "
+"있다. `git commit`에 -v 옵션을 추가하면 편집기에 diff 메시지도 추가된다)."
 
 #: en/02-git-basics/01-chapter2.markdown:310
 msgid ""
 "Alternatively, you can type your commit message inline with the `commit` "
 "command by specifying it after a `-m` flag, like this:"
-msgstr ""
+msgstr "메시지를 인라인으로 첨부할 수도 있다. `commit` 명령을 실행할 때 다음과 같이 `-m` 옵션을 사용한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:312
 msgid ""
@@ -1713,6 +1985,10 @@ msgid ""
 "\t 2 files changed, 3 insertions(+), 0 deletions(-)\n"
 "\t create mode 100644 README"
 msgstr ""
+"\t$ git commit -m \"Story 182: Fix benchmarks for speed\"\n"
+"\t[master]: created 463dc4f: \"Fix benchmarks for speed\"\n"
+"\t 2 files changed, 3 insertions(+), 0 deletions(-)\n"
+"\t create mode 100644 README"
 
 #: en/02-git-basics/01-chapter2.markdown:317
 msgid ""
@@ -1721,6 +1997,8 @@ msgid ""
 "SHA-1 checksum the commit has (`463dc4f`), how many files were changed, and "
 "statistics about lines added and removed in the commit."
 msgstr ""
+"`commit` 명령은 몇 가지 정보를 출력하는데 위 예제는 master 브랜치에 커밋했고 체크섬은 `463dc4f`이라고 알려준다. "
+"그리고 수정한 파일이 몇 개이고 삭제됐거나 추가된 줄이 몇 줄인지 알려준다."
 
 #: en/02-git-basics/01-chapter2.markdown:319
 msgid ""
@@ -1730,10 +2008,13 @@ msgid ""
 "you’re recording a snapshot of your project that you can revert to or "
 "compare to later."
 msgstr ""
+"Git은 Staging Area에 속한 Snapshot을 커밋한다는 것을 기억해야 한다. 수정은 했지만, 아직 Staging Area에 "
+"넣지 않은 것들은 다음에 커밋할 수 있다. 커밋할 때마다 프로젝트의 Snapshot을 기록하기 때문에 나중에 Snapshot끼리 "
+"비교하거나 예전 Snapshot으로 되돌릴 수 있다."
 
 #: en/02-git-basics/01-chapter2.markdown:321
 msgid "### Skipping the Staging Area ###"
-msgstr ""
+msgstr "### Staging Area 생략하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:323
 msgid ""
@@ -1744,6 +2025,9 @@ msgid ""
 "automatically stage every file that is already tracked before doing the "
 "commit, letting you skip the `git add` part:"
 msgstr ""
+"Staging Area는 커밋할 파일들을 정리한다는 점에서 매우 유용하지만 복잡하기만 하고 필요하지 않은 때도 있다. 아주 쉽게 "
+"Staging Area를 생략할 수 있다. `git commit` 명령을 실행할 때 `-a` 옵션을 추가하면 Git은 Tracked "
+"상태의 파일이라면 자동으로 Staging Area에 넣는다. 그래서 `git add` 명령을 실행하는 수고를 덜 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:325
 msgid ""
@@ -1758,16 +2042,26 @@ msgid ""
 "\t[master 83e38c7] added new benchmarks\n"
 "\t 1 files changed, 5 insertions(+), 0 deletions(-)"
 msgstr ""
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t#\n"
+"\t# Changes not staged for commit:\n"
+"\t#\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#\n"
+"\t$ git commit -a -m 'added new benchmarks'\n"
+"\t[master 83e38c7] added new benchmarks\n"
+"\t 1 files changed, 5 insertions(+), 0 deletions(-)"
 
 #: en/02-git-basics/01-chapter2.markdown:336
 msgid ""
 "Notice how you don’t have to run `git add` on the `benchmarks.rb` file in "
 "this case before you commit."
-msgstr ""
+msgstr "이 예제에서는 커밋하기 전에 `git add` 명령으로 benchmarks.rb 파일을 추가하지 않았다는 점을 눈여겨보자."
 
 #: en/02-git-basics/01-chapter2.markdown:338
 msgid "### Removing Files ###"
-msgstr ""
+msgstr "### 파일을 삭제하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:340
 msgid ""
@@ -1776,6 +2070,8 @@ msgid ""
 "`git rm` command does that and also removes the file from your working "
 "directory so you don’t see it as an untracked file next time around."
 msgstr ""
+"Git에서 파일을 제거하려면 `git rm` 명령으로 Tracked 상태의 파일을 삭제한 후에(정확하게는 Staging Area에서 "
+"삭제하는 것) 커밋해야 한다. 이 명령은 작업 디렉토리에 있는 파일도 삭제하기 때문에 실제로 지워진다."
 
 #: en/02-git-basics/01-chapter2.markdown:342
 msgid ""
@@ -1783,6 +2079,8 @@ msgid ""
 "the “Changes not staged for commit” (that is, _unstaged_) area of your `git "
 "status` output:"
 msgstr ""
+"만약 Git없이 그냥 파일을 삭제하고 `git status` 명령으로 상태를 확인하면 `Changes not staged for "
+"commit`(즉, Unstaged) 에 속해 있는 것을 확인할 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:344
 msgid ""
@@ -1796,10 +2094,19 @@ msgid ""
 "\t#       deleted:    grit.gemspec\n"
 "\t#"
 msgstr ""
+"\t$ rm grit.gemspec\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t#\n"
+"\t# Changes not staged for commit:\n"
+"\t#   (use \"git add/rm <file>...\" to update what will be committed)\n"
+"\t#\n"
+"\t#       deleted:    grit.gemspec\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:354
 msgid "Then, if you run `git rm`, it stages the file’s removal:"
-msgstr ""
+msgstr "그리고 `git rm` 명령을 실행하면 삭제한 파일은 staged 상태가 된다:"
 
 #: en/02-git-basics/01-chapter2.markdown:356
 msgid ""
@@ -1814,6 +2121,16 @@ msgid ""
 "\t#       deleted:    grit.gemspec\n"
 "\t#"
 msgstr ""
+"\t$ git rm grit.gemspec\n"
+"\trm 'grit.gemspec'\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t#\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#       deleted:    grit.gemspec\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:367
 msgid ""
@@ -1823,6 +2140,9 @@ msgid ""
 "removal of data that hasn’t yet been recorded in a snapshot and that can’t "
 "be recovered from Git."
 msgstr ""
+"커밋하면 파일은 삭제되고 Git은 이 파일을 더는 추적하지 않는다. 이미 파일을 수정했거나 Index에(역주, Staging Area을 "
+"Git Index라고도 부른다) 추가했다면 `-f`옵션을 주어 강제로 삭제해야 한다. 이 점은 실수로 데이터를 삭제하지 못하도록 하는 "
+"안전장치다. 한 번도 커밋한적 없는 데이터는 Git으로 복구할 수 없다."
 
 #: en/02-git-basics/01-chapter2.markdown:369
 msgid ""
@@ -1833,20 +2153,24 @@ msgid ""
 "and accidentally added it, like a large log file or a bunch of `.a` compiled "
 "files. To do this, use the `--cached` option:"
 msgstr ""
+"또 Staging Area에서만 제거하고 작업 디렉토리에 있는 파일은 지우지 않고 남겨둘 수 있다. 다시 말해서 하드디스크에 있는 파일은 "
+"그대로 두고 Git만 더는 추적하지 않게 한다. 이것은 `.gitignore` 파일에 추가하는 것을 빼먹었거나 대용량 로그 파일이나 "
+"컴파일된 파일인 `.a` 파일 같은 것을 실수로 추가했을 때 쓴다. `--cached` 옵션을 사용하여 명령을 실행한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:371
 msgid "\t$ git rm --cached readme.txt"
-msgstr ""
+msgstr "\t$ git rm --cached readme.txt"
 
 #: en/02-git-basics/01-chapter2.markdown:373
 msgid ""
 "You can pass files, directories, and file-glob patterns to the `git rm` "
 "command. That means you can do things such as"
 msgstr ""
+"여러 개의 파일이나 디렉토리를 한꺼번에 삭제할 수도 있다. 다음과 같이 `git rm` 명령에 file-glob 패턴을 사용한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:375
 msgid "\t$ git rm log/\\*.log"
-msgstr ""
+msgstr "\t$ git rm log/\\*.log"
 
 #: en/02-git-basics/01-chapter2.markdown:377
 msgid ""
@@ -1856,18 +2180,20 @@ msgid ""
 "omitted. This command removes all files that have the `.log` extension in "
 "the `log/` directory. Or, you can do something like this:"
 msgstr ""
+"`*`앞에 `\\`을 사용한 것을 기억하자. 이것은 쉘의 파일명 확장에 더하여 Git 자체의 파일명 확장 기능을 사용하기 위해서이다. 이 "
+"명령은 `log/` 디렉토리에 있는 `.log` 파일을 모두 삭제한다. 다음의 예제처럼 할 수도 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:379
 msgid "\t$ git rm \\*~"
-msgstr ""
+msgstr "\t$ git rm \\*~"
 
 #: en/02-git-basics/01-chapter2.markdown:381
 msgid "This command removes all files that end with `~`."
-msgstr ""
+msgstr "이 명령은 `~`로 끝나는 파일을 모두 삭제한다."
 
 #: en/02-git-basics/01-chapter2.markdown:383
 msgid "### Moving Files ###"
-msgstr ""
+msgstr "### 파일 이름 변경하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:385
 msgid ""
@@ -1876,22 +2202,25 @@ msgid ""
 "renamed the file. However, Git is pretty smart about figuring that out after "
 "the fact — we’ll deal with detecting file movement a bit later."
 msgstr ""
+"Git은 다른 VCS 시스템과는 달리 파일 이름의 변경이나 파일의 이동을 명시적으로 관리하지 않는다. 다시 말해서 파일 이름이 변경됐다는 "
+"별도의 정보를 저장하지 않는다. Git은 똑똑해서 굳이 파일 이름이 변경되었다는 것을 추적하지 않아도 아는 방법이 있다. 이제 Git이 "
+"파일의 이름이 변경된 것을 어떻게 알아내는지 살펴본다."
 
 #: en/02-git-basics/01-chapter2.markdown:387
 msgid ""
 "Thus it’s a bit confusing that Git has a `mv` command. If you want to rename "
 "a file in Git, you can run something like"
-msgstr ""
+msgstr "이렇게 말하고 Git에 `mv` 명령이 있는 게 좀 이상하겠지만, 다음과 같이 파일이름을 변경할 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:389
 msgid "\t$ git mv file_from file_to"
-msgstr ""
+msgstr "\t$ git mv file_from file_to"
 
 #: en/02-git-basics/01-chapter2.markdown:391
 msgid ""
 "and it works fine. In fact, if you run something like this and look at the "
 "status, you’ll see that Git considers it a renamed file:"
-msgstr ""
+msgstr "잘 동작한다. 이 명령을 실행하고 Git의 상태를 확인해보면 Git은 이름이 바뀐 사실을 알고 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:393
 msgid ""
@@ -1906,10 +2235,20 @@ msgid ""
 "\t#       renamed:    README.txt -> README\n"
 "\t#"
 msgstr ""
+"\t$ git mv README.txt README\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Your branch is ahead of 'origin/master' by 1 commit.\n"
+"\t#\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#       renamed:    README.txt -> README\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:404
 msgid "However, this is equivalent to running something like this:"
-msgstr ""
+msgstr "사실 `git mv` 명령은 다음의 명령어들을 수행한 것과 완전히 똑같다:"
 
 #: en/02-git-basics/01-chapter2.markdown:406
 msgid ""
@@ -1917,6 +2256,9 @@ msgid ""
 "\t$ git rm README.txt\n"
 "\t$ git add README"
 msgstr ""
+"\t$ mv README.txt README\n"
+"\t$ git rm README.txt\n"
+"\t$ git add README"
 
 #: en/02-git-basics/01-chapter2.markdown:410
 msgid ""
@@ -1926,10 +2268,13 @@ msgid ""
 "More important, you can use any tool you like to rename a file, and address "
 "the add/rm later, before you commit."
 msgstr ""
+"`git mv`는 일종의 단축 명령어이다. 이 명령으로 파일이름을 바꿔도 되고 `mv` 명령으로 파일이름을 직접 바꿔도 된다. 단지 "
+"Git의 `mv`명령은 편리하게 명령을 세 번 실행해주는 것뿐이다. 어떤 도구로 이름을 바꿔도 상관없다. 중요한 것은 이름을 변경하고 "
+"나서 꼭 rm/add 명령을 실행해야 한다는 것뿐이다."
 
 #: en/02-git-basics/01-chapter2.markdown:412
 msgid "## Viewing the Commit History ##"
-msgstr ""
+msgstr "## 커밋 히스토리 조회하기 ##"
 
 #: en/02-git-basics/01-chapter2.markdown:414
 msgid ""
@@ -1938,22 +2283,26 @@ msgid ""
 "what has happened. The most basic and powerful tool to do this is the `git "
 "log` command."
 msgstr ""
+"새로 저장소를 만들어서 몇 번 커밋을 했을 수도 있고, 커밋 히스토리가 있는 저장소를 Clone했을 수도 있다. 어쨌든 가끔 저장소의 "
+"히스토리를 보고 싶을 때가 있다. Git에는 히스토리를 조회하는 명령어인 `git log`가 있다."
 
 #: en/02-git-basics/01-chapter2.markdown:416
 msgid ""
 "These examples use a very simple project called `simplegit` that I often use "
 "for demonstrations. To get the project, run"
 msgstr ""
+"이 예제에서는 simplegit 이라는 매우 단순한 프로젝트를 사용한다. simplegit은 Git을 설명하는데 자주 사용하는 예제다. "
+"다음과 같이 이 프로젝트를 Clone한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:418
 msgid "\tgit clone git://github.com/schacon/simplegit-progit.git"
-msgstr ""
+msgstr "\tgit clone git://github.com/schacon/simplegit-progit.git"
 
 #: en/02-git-basics/01-chapter2.markdown:420
 msgid ""
 "When you run `git log` in this project, you should get output that looks "
 "something like this:"
-msgstr ""
+msgstr "이 프로젝트 디렉토리에서 `git log` 명령을 실행하면 다음과 같이 출력된다:"
 
 #: en/02-git-basics/01-chapter2.markdown:422
 msgid ""
@@ -1962,11 +2311,15 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Mon Mar 17 21:52:11 2008 -0700"
 msgstr ""
+"\t$ git log\n"
+"\tcommit ca82a6dff817ec66f44342007202690a93763949\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Mon Mar 17 21:52:11 2008 -0700"
 
 #: en/02-git-basics/01-chapter2.markdown:427
 msgctxt "en/02-git-basics/01-chapter2.markdown:427"
 msgid "\t    changed the version number"
-msgstr ""
+msgstr "\t    changed the version number"
 
 #: en/02-git-basics/01-chapter2.markdown:429
 msgctxt "en/02-git-basics/01-chapter2.markdown:429"
@@ -1975,11 +2328,14 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Sat Mar 15 16:40:33 2008 -0700"
 msgstr ""
+"\tcommit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Sat Mar 15 16:40:33 2008 -0700"
 
 #: en/02-git-basics/01-chapter2.markdown:433
 msgctxt "en/02-git-basics/01-chapter2.markdown:433"
 msgid "\t    removed unnecessary test code"
-msgstr ""
+msgstr "\t    removed unnecessary test code"
 
 #: en/02-git-basics/01-chapter2.markdown:435
 msgctxt "en/02-git-basics/01-chapter2.markdown:435"
@@ -1988,11 +2344,14 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Sat Mar 15 10:31:28 2008 -0700"
 msgstr ""
+"\tcommit a11bef06a3f659402fe7563abf99ad00de2209e6\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Sat Mar 15 10:31:28 2008 -0700"
 
 #: en/02-git-basics/01-chapter2.markdown:439
 msgctxt "en/02-git-basics/01-chapter2.markdown:439"
 msgid "\t    first commit"
-msgstr ""
+msgstr "\t    first commit"
 
 #: en/02-git-basics/01-chapter2.markdown:441
 msgid ""
@@ -2002,6 +2361,8 @@ msgid ""
 "checksum, the author’s name and e-mail, the date written, and the commit "
 "message."
 msgstr ""
+"특별한 인자 없이 `git log` 명령을 실행하면 저장소의 커밋 히스토리를 시간순으로 보여준다. 즉, 가장 최근의 커밋이 가장 먼저 "
+"나온다. 그리고 이어서 각 커밋의 SHA-1 체크섬, 저자 이름, 저자 이메일, 커밋한 날짜, 커밋 메시지를 보여준다."
 
 #: en/02-git-basics/01-chapter2.markdown:443
 msgid ""
@@ -2009,6 +2370,7 @@ msgid ""
 "to show you exactly what you’re looking for. Here, we’ll show you some of "
 "the most-used options."
 msgstr ""
+"원하는 히스토리를 검색할 수 있도록 `git log` 명령은 매우 다양한 옵션을 지원한다. 여기에서는 자주 사용하는 옵션을 설명한다."
 
 #: en/02-git-basics/01-chapter2.markdown:445
 msgid ""
@@ -2016,6 +2378,8 @@ msgid ""
 "each commit. You can also use `-2`, which limits the output to only the last "
 "two entries:"
 msgstr ""
+"`-p`가 가장 유용한 옵션 중 하나다. `-p`는 각 커밋의 diff 결과를 보여준다. 게다가 `-2`는 최근 두 개의 결과만 보여주는 "
+"옵션이다:"
 
 #: en/02-git-basics/01-chapter2.markdown:447
 msgid ""
@@ -2024,11 +2388,15 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Mon Mar 17 21:52:11 2008 -0700"
 msgstr ""
+"\t$ git log -p -2\n"
+"\tcommit ca82a6dff817ec66f44342007202690a93763949\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Mon Mar 17 21:52:11 2008 -0700"
 
 #: en/02-git-basics/01-chapter2.markdown:452
 msgctxt "en/02-git-basics/01-chapter2.markdown:452"
 msgid "\t    changed the version number"
-msgstr ""
+msgstr "\t    changed the version number"
 
 #: en/02-git-basics/01-chapter2.markdown:454
 msgid ""
@@ -2042,6 +2410,15 @@ msgid ""
 "\t+    s.version   =   \"0.1.1\"\n"
 "\t     s.author    =   \"Scott Chacon\""
 msgstr ""
+"\tdiff --git a/Rakefile b/Rakefile\n"
+"\tindex a874b73..8f94139 100644\n"
+"\t--- a/Rakefile\n"
+"\t+++ b/Rakefile\n"
+"\t@@ -5,7 +5,7 @@ require 'rake/gempackagetask'\n"
+"\t spec = Gem::Specification.new do |s|\n"
+"\t-    s.version   =   \"0.1.0\"\n"
+"\t+    s.version   =   \"0.1.1\"\n"
+"\t     s.author    =   \"Scott Chacon\""
 
 #: en/02-git-basics/01-chapter2.markdown:464
 msgctxt "en/02-git-basics/01-chapter2.markdown:464"
@@ -2050,11 +2427,14 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Sat Mar 15 16:40:33 2008 -0700"
 msgstr ""
+"\tcommit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Sat Mar 15 16:40:33 2008 -0700"
 
 #: en/02-git-basics/01-chapter2.markdown:468
 msgctxt "en/02-git-basics/01-chapter2.markdown:468"
 msgid "\t    removed unnecessary test code"
-msgstr ""
+msgstr "\t    removed unnecessary test code"
 
 #: en/02-git-basics/01-chapter2.markdown:470
 msgid ""
@@ -2065,6 +2445,12 @@ msgid ""
 "\t@@ -18,8 +18,3 @@ class SimpleGit\n"
 "\t     end"
 msgstr ""
+"\tdiff --git a/lib/simplegit.rb b/lib/simplegit.rb\n"
+"\tindex a0a60ae..47c6340 100644\n"
+"\t--- a/lib/simplegit.rb\n"
+"\t+++ b/lib/simplegit.rb\n"
+"\t@@ -18,8 +18,3 @@ class SimpleGit\n"
+"\t     end"
 
 #: en/02-git-basics/01-chapter2.markdown:477
 msgid ""
@@ -2076,6 +2462,13 @@ msgid ""
 "\t-end\n"
 "\t\\ No newline at end of file"
 msgstr ""
+"\t end\n"
+"\t-\n"
+"\t-if $0 == __FILE__\n"
+"\t-  git = SimpleGit.new\n"
+"\t-  puts git.show\n"
+"\t-end\n"
+"\t\\ No newline at end of file"
 
 #: en/02-git-basics/01-chapter2.markdown:485
 msgid ""
@@ -2086,6 +2479,8 @@ msgid ""
 "example, if you want to see some abbreviated stats for each commit, you can "
 "use the `--stat` option:"
 msgstr ""
+"이 옵션은 직접 diff를 실행한 것과 같은 결과를 출력하기 때문에 동료가 무엇을 커밋했는지 리뷰하고 빨리 조회하는데 유용하다. 또 "
+"`git log` 명령에는 히스토리의 통계를 보여주는 옵션도 있다. `--stat` 옵션으로 각 커밋의 통계 정보를 조회할 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:488
 msgid ""
@@ -2094,17 +2489,23 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Mon Mar 17 21:52:11 2008 -0700"
 msgstr ""
+"\t$ git log --stat\n"
+"\tcommit ca82a6dff817ec66f44342007202690a93763949\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Mon Mar 17 21:52:11 2008 -0700"
 
 #: en/02-git-basics/01-chapter2.markdown:493
 msgctxt "en/02-git-basics/01-chapter2.markdown:493"
 msgid "\t    changed the version number"
-msgstr ""
+msgstr "\t    changed the version number"
 
 #: en/02-git-basics/01-chapter2.markdown:495
 msgid ""
 "\t Rakefile |    2 +-\n"
 "\t 1 files changed, 1 insertions(+), 1 deletions(-)"
 msgstr ""
+"\t Rakefile |    2 +-\n"
+"\t 1 files changed, 1 insertions(+), 1 deletions(-)"
 
 #: en/02-git-basics/01-chapter2.markdown:498
 msgctxt "en/02-git-basics/01-chapter2.markdown:498"
@@ -2113,17 +2514,22 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Sat Mar 15 16:40:33 2008 -0700"
 msgstr ""
+"\tcommit 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Sat Mar 15 16:40:33 2008 -0700"
 
 #: en/02-git-basics/01-chapter2.markdown:502
 msgctxt "en/02-git-basics/01-chapter2.markdown:502"
 msgid "\t    removed unnecessary test code"
-msgstr ""
+msgstr "\t    removed unnecessary test code"
 
 #: en/02-git-basics/01-chapter2.markdown:504
 msgid ""
 "\t lib/simplegit.rb |    5 -----\n"
 "\t 1 files changed, 0 insertions(+), 5 deletions(-)"
 msgstr ""
+"\t lib/simplegit.rb |    5 -----\n"
+"\t 1 files changed, 0 insertions(+), 5 deletions(-)"
 
 #: en/02-git-basics/01-chapter2.markdown:507
 msgctxt "en/02-git-basics/01-chapter2.markdown:507"
@@ -2132,11 +2538,14 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Sat Mar 15 10:31:28 2008 -0700"
 msgstr ""
+"\tcommit a11bef06a3f659402fe7563abf99ad00de2209e6\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Sat Mar 15 10:31:28 2008 -0700"
 
 #: en/02-git-basics/01-chapter2.markdown:511
 msgctxt "en/02-git-basics/01-chapter2.markdown:511"
 msgid "\t    first commit"
-msgstr ""
+msgstr "\t    first commit"
 
 #: en/02-git-basics/01-chapter2.markdown:513
 msgid ""
@@ -2145,6 +2554,10 @@ msgid ""
 "\t lib/simplegit.rb |   25 +++++++++++++++++++++++++\n"
 "\t 3 files changed, 54 insertions(+), 0 deletions(-)"
 msgstr ""
+"\t README           |    6 ++++++\n"
+"\t Rakefile         |   23 +++++++++++++++++++++++\n"
+"\t lib/simplegit.rb |   25 +++++++++++++++++++++++++\n"
+"\t 3 files changed, 54 insertions(+), 0 deletions(-)"
 
 #: en/02-git-basics/01-chapter2.markdown:518
 msgid ""
@@ -2159,6 +2572,11 @@ msgid ""
 "addition, the `short`, `full`, and `fuller` options show the output in "
 "roughly the same format but with less or more information, respectively:"
 msgstr ""
+"이 결과에서 `--stat` 옵션은 어떤 파일이 수정됐는지, 얼마나 많은 파일이 변경됐는지, 또 얼마나 많은 줄을 추가하거나 삭제했는지 "
+"보여준다. 요약정보는 가장 뒤쪽에 보여준다.다른 또 유용한 옵션은 `--pretty` 옵션이다. 이 옵션을 통해 log의 내용을 보여줄 "
+"때 기본 형식 이외에 여러 가지 중에 하나를 선택할 수 있다.  `oneline` 옵션은 각 커밋을 한 줄로 보여준다. 이 옵션은 많은 "
+"커밋을 한 번에 조회할 때 유용하다. 추가로 `short`, `full`, `fuller` 옵션도 있는데 이것들은 정보를 조금씩 가감해서 "
+"보여준다:"
 
 #: en/02-git-basics/01-chapter2.markdown:521
 msgid ""
@@ -2167,6 +2585,10 @@ msgid ""
 "\t085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7 removed unnecessary test code\n"
 "\ta11bef06a3f659402fe7563abf99ad00de2209e6 first commit"
 msgstr ""
+"\t$ git log --pretty=oneline\n"
+"\tca82a6dff817ec66f44342007202690a93763949 changed the version number\n"
+"\t085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7 removed unnecessary test code\n"
+"\ta11bef06a3f659402fe7563abf99ad00de2209e6 first commit"
 
 #: en/02-git-basics/01-chapter2.markdown:526
 msgid ""
@@ -2175,6 +2597,9 @@ msgid ""
 "output for machine parsing — because you specify the format explicitly, you "
 "know it won’t change with updates to Git:"
 msgstr ""
+"가장 재밌는 옵션은 `format` 옵션이다. 나만의 형식으로 결과를 출력하고 싶을 때 사용한다. 특히 결과를 다른 프로그램으로 "
+"파싱하고자 할 때 유용하다. 이 옵션을 사용하면 형식을 정확하게 일치시킬 수 있기 때문에 Git을 새 버전으로 바꿔도 결과의 형식이 "
+"바뀌지 않는다:"
 
 #: en/02-git-basics/01-chapter2.markdown:528
 msgid ""
@@ -2183,10 +2608,14 @@ msgid ""
 "\t085bb3b - Scott Chacon, 11 months ago : removed unnecessary test code\n"
 "\ta11bef0 - Scott Chacon, 11 months ago : first commit"
 msgstr ""
+"\t$ git log --pretty=format:\"%h - %an, %ar : %s\"\n"
+"\tca82a6d - Scott Chacon, 11 months ago : changed the version number\n"
+"\t085bb3b - Scott Chacon, 11 months ago : removed unnecessary test code\n"
+"\ta11bef0 - Scott Chacon, 11 months ago : first commit"
 
 #: en/02-git-basics/01-chapter2.markdown:533
 msgid "Table 2-1 lists some of the more useful options that format takes."
-msgstr ""
+msgstr "표 2-1 형식에서 사용하는 유용한 옵션들."
 
 #: en/02-git-basics/01-chapter2.markdown:535
 msgid ""
@@ -2207,6 +2636,22 @@ msgid ""
 "\t%cr\tCommitter date, relative\n"
 "\t%s\tSubject"
 msgstr ""
+"\tOption\tDescription of Output\n"
+"\t%H\tCommit hash\n"
+"\t%h\tAbbreviated commit hash\n"
+"\t%T\tTree hash\n"
+"\t%t\tAbbreviated tree hash\n"
+"\t%P\tParent hashes\n"
+"\t%p\tAbbreviated parent hashes\n"
+"\t%an\tAuthor name\n"
+"\t%ae\tAuthor e-mail\n"
+"\t%ad\tAuthor date (format respects the –date= option)\n"
+"\t%ar\tAuthor date, relative\n"
+"\t%cn\tCommitter name\n"
+"\t%ce\tCommitter email\n"
+"\t%cd\tCommitter date\n"
+"\t%cr\tCommitter date, relative\n"
+"\t%s\tSubject"
 
 #: en/02-git-basics/01-chapter2.markdown:552
 msgid ""
@@ -2217,6 +2662,10 @@ msgid ""
 "both of you get credit — you as the author and the core member as the "
 "committer. We’ll cover this distinction a bit more in *Chapter 5*."
 msgstr ""
+"_저자(Author)_ 와 _커미터(Committer)_ 를 구분하는 것이 조금 이상해 보일 수 있다. 저자는 원래 작업을 수행한 "
+"원작자이고 커밋터는 마지막으로 이 작업을 적용한 사람이다. 만약 당신이 어떤 프로젝트에 패치를 보냈고 그 프로젝트의 담당자가 패치를 "
+"적용했다면 두 명의 정보를 모두 알 필요가 있다. 그래서 이 경우 당신이 저자고 그 담당자가 커미터다. 5장에서 이 주제에 대해 자세히 "
+"다룰 것이다."
 
 #: en/02-git-basics/01-chapter2.markdown:554
 msgid ""
@@ -2225,6 +2674,8 @@ msgid ""
 "showing your branch and merge history, which we can see our copy of the Grit "
 "project repository:"
 msgstr ""
+"`oneline`과 `format` 옵션은 `--graph` 옵션과 함께 사용할 때 더 빛난다. 이 명령은 브랜치와 머지 히스토리를 "
+"보여주는 아스키 그래프를 출력한다. 이 명령을 Grit 프로젝트 저장소에서 사용해보면 다음과 같다:"
 
 #: en/02-git-basics/01-chapter2.markdown:556
 msgid ""
@@ -2240,6 +2691,17 @@ msgid ""
 "\t* d6016bc require time for xmlschema\n"
 "\t*  11d191e Merge branch 'defunkt' into local"
 msgstr ""
+"\t$ git log --pretty=format:\"%h %s\" --graph\n"
+"\t* 2d3acf9 ignore errors from SIGCHLD on trap\n"
+"\t*  5e3ee11 Merge branch 'master' of git://github.com/dustin/grit\n"
+"\t|\\\n"
+"\t| * 420eac9 Added a method for getting the current branch.\n"
+"\t* | 30e367c timeout code and tests\n"
+"\t* | 5a09431 add timeout protection to grit\n"
+"\t* | e1193f8 support for heads with slashes in them\n"
+"\t|/\n"
+"\t* d6016bc require time for xmlschema\n"
+"\t*  11d191e Merge branch 'defunkt' into local"
 
 #: en/02-git-basics/01-chapter2.markdown:568
 msgid ""
@@ -2248,6 +2710,9 @@ msgid ""
 "other common formatting options that may be useful, along with how they "
 "change the output of the `log` command."
 msgstr ""
+"`git log` 명령의 기본적인 옵션과 출력물의 형식에 관련된 옵션을 살펴보았다. `git log` 명령은 앞서 살펴본 것보다 더 많은 "
+"옵션을 지원한다. 표 2-2 는 지금 설명한 것과 함께 유용하게 사용할 수 있는 옵션들이다. 각 옵션으로 어떻게 `log` 명령을 "
+"제어할 수 있는지 보여준다."
 
 #: en/02-git-basics/01-chapter2.markdown:570
 msgid ""
@@ -2269,10 +2734,21 @@ msgid ""
 "\t--pretty\tShow commits in an alternate format. Options include oneline, "
 "short, full, fuller, and format (where you specify your own format)."
 msgstr ""
+"\t옵션  설명\n"
+"\t-p\t각 커밋에 적용된 패치를 보여준다.\n"
+"\t--stat\t각 커밋에서 수정된 파일의 통계정보를 보여준다.\n"
+"\t--shortstat\t `--stat` 명령의 결과 중에서 수정한 파일, 추가된 줄, 삭제된 줄만 보여준다.\n"
+"\t--name-only\t 커밋 정보중에서 수정된 파일의 목록만 보여준다.\n"
+"\t--name-status\t 수정된 파일의 목록을 보여줄 뿐만 아니라 파일을 추가한 것인지, 수정한 것인지, 삭제한 것인지도 보여준다.\n"
+"\t--abbrev-commit\t 40자 짜리 SHA-1 체크섬을 전부 보여주는 것이 아니라 처음 몇 자만 보여준다.\n"
+"\t--relative-date\t 정확한 시간을 보여주는 것이 아니라 `2 주전`처럼 상대적인 형식으로 보여준다.\n"
+"\t--graph\t브랜치와 머지 히스토리 정보까지 아스키 그래프로 보여준다.\n"
+"\t--pretty\t지정한 형식으로 보여준다. 이 옵션에는 oneline, short, full, fuller, format이 있다. "
+"format은 원하는 형식으로 출력하고자 할 때 사용한다."
 
 #: en/02-git-basics/01-chapter2.markdown:581
 msgid "### Limiting Log Output ###"
-msgstr ""
+msgstr "### 조회 제한조건 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:583
 msgid ""
@@ -2284,6 +2760,10 @@ msgid ""
 "that often, because Git by default pipes all output through a pager so you "
 "see only one page of log output at a time."
 msgstr ""
+"출력 형식과 관련된 옵션들을 살펴봤지만 `git log` 명령은 조회 범위를 제한하는 옵션들도 있다. 히스토리 전부가 아니라 부분만 "
+"조회한다. 이미 최근 두 개만 조회하는 `-2` 옵션은 살펴봤다. 실제 사용법은 `-<n>`이고 n은 최근 n개의 커밋을 의미한다. 사실 "
+"이 옵션은 잘 쓰이지 않는데, Git가 기본적으로 출력을 pager류의 프로그램을 거쳐서 내보내므로 한 번에 한 페이지씩 볼 수 있기 "
+"때문이다."
 
 #: en/02-git-basics/01-chapter2.markdown:585
 msgid ""
@@ -2291,16 +2771,20 @@ msgid ""
 "useful. For example, this command gets the list of commits made in the last "
 "two weeks:"
 msgstr ""
+"반면 `--since`나 `--until`같은 시간을 기준으로 조회하는 옵션은 매우 유용하다. 지난 2주 동안 만들어진 커밋들만 조회하는 "
+"명령은 다음과 같다:"
 
 #: en/02-git-basics/01-chapter2.markdown:587
 msgid "\t$ git log --since=2.weeks"
-msgstr ""
+msgstr "\t$ git log --since=2.weeks"
 
 #: en/02-git-basics/01-chapter2.markdown:589
 msgid ""
 "This command works with lots of formats — you can specify a specific date "
 "(“2008-01-15”) or a relative date such as “2 years 1 day 3 minutes ago”."
 msgstr ""
+"이 옵션은 다양한 형식을 지원한다. `2008-01-15`같이 정확한 날짜도 사용할 수 있고 `2 years 1 day 3 minutes "
+"ago`같이 상대적인 기간을 사용할 수도 있다."
 
 #: en/02-git-basics/01-chapter2.markdown:591
 msgid ""
@@ -2310,6 +2794,9 @@ msgid ""
 "if you want to specify both author and grep options, you have to add `--all-"
 "match` or the command will match commits with either.)"
 msgstr ""
+"또 다른 기준도 있다. `--author` 옵션으로 저자를 지정하여 검색할 수도 있고 `--grep` 옵션으로 커밋 메시지에서 키워드를 "
+"검색할 수도 있다(author와 grep 옵션을 나눠서 지정하고 싶지 않으면 `--all-match` 옵션으로 한 번에 검색할 수 "
+"있다).  "
 
 #: en/02-git-basics/01-chapter2.markdown:593
 msgid ""
@@ -2319,12 +2806,15 @@ msgid ""
 "option and is generally preceded by double dashes (`--`) to separate the "
 "paths from the options."
 msgstr ""
+"마지막으로 파일 경로로 검색하는 옵션이 있는데 이것도 정말 유용하다. 디렉토리나 파일 이름을 사용하여 그 파일이 변경된 log의 결과를 "
+"검색할 수 있다. 이 옵션은 `--`와 함께 경로 이름들을 사용하는데 명령어 끝 부분에 쓴다(역주, `git log -- path1 "
+"path2`)."
 
 #: en/02-git-basics/01-chapter2.markdown:595
 msgid ""
 "In Table 2-3 we’ll list these and a few other common options for your "
 "reference."
-msgstr ""
+msgstr "표 2-3은 조회 범위를 제한하는 옵션들이다."
 
 #: en/02-git-basics/01-chapter2.markdown:597
 msgid ""
@@ -2339,6 +2829,12 @@ msgid ""
 "\t--committer\tOnly show commits in which the committer entry matches the "
 "specified string."
 msgstr ""
+"\t옵션\t설명\n"
+"\t-(n)\t최근 n 개의 커밋만 조회한다.\n"
+"\t--since, --after\t명시한 날짜 이후의 커밋만 검색한다.\n"
+"\t--until, --before\t명시한 날짜 이전의 커밋만 조회한다.\n"
+"\t--author\t입력한 저자의 커밋만 보여준다.\n"
+"\t--committer\t입력한 커미터의 커밋만 보여준다."
 
 #: en/02-git-basics/01-chapter2.markdown:604
 msgid ""
@@ -2346,6 +2842,8 @@ msgid ""
 "Git source code history were committed by Junio Hamano in the month of "
 "October 2008 and were not merges, you can run something like this:"
 msgstr ""
+"다음의 예제는 2008년 10월에 Junio Hamano가 커밋한 히스토리를 조회하는 것이다. 그 중에서 테스트 파일을 수정한 커밋 "
+"중에서 머지 커밋이 아닌 것들만 조회한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:606
 msgid ""
@@ -2358,16 +2856,24 @@ msgid ""
 "\t51a94af - Fix \"checkout --track -b newbranch\" on detac\n"
 "\tb0ad11e - pull: allow \"git pull origin $something:$cur"
 msgstr ""
+"\t$ git log --pretty=\"%h - %s\" --author=gitster --since=\"2008-10-01\" \\\n"
+"\t   --before=\"2008-11-01\" --no-merges -- t/\n"
+"\t5610e3b - Fix testcase failure when extended attribute\n"
+"\tacd3b9e - Enhance hold_lock_file_for_{update,append}()\n"
+"\tf563754 - demonstrate breakage of detached checkout wi\n"
+"\td1a43f2 - reset --hard/read-tree --reset -u: remove un\n"
+"\t51a94af - Fix \"checkout --track -b newbranch\" on detac\n"
+"\tb0ad11e - pull: allow \"git pull origin $something:$cur"
 
 #: en/02-git-basics/01-chapter2.markdown:615
 msgid ""
 "Of the nearly 20,000 commits in the Git source code history, this command "
 "shows the 6 that match those criteria."
-msgstr ""
+msgstr "총 2만여 개의 커밋 히스토리에서 이 명령의 검색 조건에 만족하는 것은 단 6개였다."
 
 #: en/02-git-basics/01-chapter2.markdown:617
 msgid "### Using a GUI to Visualize History ###"
-msgstr ""
+msgstr "### GUI 도구를 사용하여 히스토리를 시각화하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:619
 msgid ""
@@ -2378,12 +2884,17 @@ msgid ""
 "`gitk` on the command line in your project, you should see something like "
 "Figure 2-2."
 msgstr ""
+"GUI 도구로 커밋 히스토리를 시각화하고 싶다면 gitk를 사용할 수 있다. gitk는 Tcl/Tk 프로그램이고 `git log` 명령을 "
+"시각화해주는 도구다. gitk는 `git log` 명령이 지원하는 필터링 옵션을 거의 모두 지원한다. 프로젝트 디렉토리에서 gitk를 "
+"실행하면 그림 2-2처럼 보일 것이다."
 
 #: en/02-git-basics/01-chapter2.markdown:621
 msgid ""
 "Insert 18333fig0202.png\n"
 "Figure 2-2. The gitk history visualizer."
 msgstr ""
+"Insert 18333fig0202.png\n"
+"그림 2-2. gitk의 히스토리"
 
 #: en/02-git-basics/01-chapter2.markdown:624
 msgid ""
@@ -2391,10 +2902,12 @@ msgid ""
 "nice ancestry graph. The diff viewer in the bottom half of the window shows "
 "you the changes introduced at any commit you click."
 msgstr ""
+"위쪽 반을 차지하는 윈도우에서는 히스토리를 그래프로 예쁘게 보여준다. 아래쪽 반을 차지하는 윈도우는 diff 결과를 보여주는데 위쪽 "
+"윈도우에서 선택한 커밋에 대한 diff 결과를 보여준다."
 
 #: en/02-git-basics/01-chapter2.markdown:626
 msgid "## Undoing Things ##"
-msgstr ""
+msgstr "## 되돌리기(Undo) ##"
 
 #: en/02-git-basics/01-chapter2.markdown:628
 msgid ""
@@ -2403,10 +2916,13 @@ msgid ""
 "always revert some of these undos. This is one of the few areas in Git where "
 "you may lose some work if you do it wrong."
 msgstr ""
+"일을 하다보면 모든 단계에서 어떤 것은 되돌리고 싶을 때가 있다. 이번에는 우리가 한 일을 되돌리는 방법을 살펴볼 것이다. 한 번 "
+"되돌리면 복구할 수 없어서 주의해야 한다. Git을 사용하면 우리가 한 실수를 복구하지 못할 것은 거의 없지만 되돌리기는 복구할 수 "
+"없다."
 
 #: en/02-git-basics/01-chapter2.markdown:630
 msgid "### Changing Your Last Commit ###"
-msgstr ""
+msgstr "### 커밋 수정하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:632
 msgid ""
@@ -2414,10 +2930,12 @@ msgid ""
 "forget to add some files, or you mess up your commit message. If you want to "
 "try that commit again, you can run commit with the `--amend` option:"
 msgstr ""
+"종종 완료한 커밋을 수정해야 할 때가 있다. 너무 일찍 커밋했거나 어떤 파일을 빼먹었을 때 그리고 커밋 메시지를 잘못 적었을 때 하게 "
+"된다. 다시 커밋하고 싶으면 `--amend` 옵션을 사용한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:634
 msgid "\t$ git commit --amend"
-msgstr ""
+msgstr "\t$ git commit --amend"
 
 #: en/02-git-basics/01-chapter2.markdown:636
 msgid ""
@@ -2426,20 +2944,22 @@ msgid ""
 "immediately after your previous commit), then your snapshot will look "
 "exactly the same and all you’ll change is your commit message."
 msgstr ""
+"이 명령은 Staging Area를 사용하여 커밋한다. 만약 마지막으로 커밋하고 나서 수정한 것이 없다면(커밋하자마자 바로 이 명령을 "
+"실행하는 경우) 조금 전에 한 커밋과 모든 것이 같을 것이다. 이 경우는 커밋 메시지만 수정하게 된다."
 
 #: en/02-git-basics/01-chapter2.markdown:638
 msgid ""
 "The same commit-message editor fires up, but it already contains the message "
 "of your previous commit. You can edit the message the same as always, but it "
 "overwrites your previous commit."
-msgstr ""
+msgstr "편집기가 실행되면 이전 커밋 메시지가 이미 포함돼 있다. 메시지를 수정하지 않고 그대로 커밋해도 기존의 커밋을 덮어쓴다. "
 
 #: en/02-git-basics/01-chapter2.markdown:640
 msgid ""
 "As an example, if you commit and then realize you forgot to stage the "
 "changes in a file you wanted to add to this commit, you can do something "
 "like this:"
-msgstr ""
+msgstr "예를 들어 커밋을 했는데 Stage하는 것을 깜빡하고 빠트린 파일이 있으면 다음과 같이 고칠 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:642
 msgid ""
@@ -2447,16 +2967,19 @@ msgid ""
 "\t$ git add forgotten_file\n"
 "\t$ git commit --amend"
 msgstr ""
+"\t$ git commit -m 'initial commit'\n"
+"\t$ git add forgotten_file\n"
+"\t$ git commit --amend"
 
 #: en/02-git-basics/01-chapter2.markdown:646
 msgid ""
 "After these three commands, you end up with a single commit — the second "
 "commit replaces the results of the first."
-msgstr ""
+msgstr "여기서 실행한 명령어 3개는 모두 하나의 커밋으로 기록된다. 두 번째 커밋은 첫 번째 커밋을 덮어쓴다."
 
 #: en/02-git-basics/01-chapter2.markdown:648
 msgid "### Unstaging a Staged File ###"
-msgstr ""
+msgstr "### 파일 상태를 Unstage로 변경하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:650
 msgid ""
@@ -2468,6 +2991,10 @@ msgid ""
 "stage them both. How can you unstage one of the two? The `git status` "
 "command reminds you:"
 msgstr ""
+"다음은 Staging Area와 작업 디렉토리 사이를 넘나드는 방법을 설명한다. 멋진 부분은, 두 영역의 상태를 확인하기 위해 명령할 "
+"때마다, 변경된 상태를 되돌리는 명령을 상기시켜 준다는 점이다. 예를 들어 파일을 두 개 수정했는데 따로따로 커밋하려고 했지만, 실수로 "
+"`git add *` 라고 실행해 버렸다. 두 파일 모두 Staging Area에 들어 있다. 이제 둘 중 하나를 어떻게 꺼낼까? 우선 "
+"`git status` 명령으로 확인해보자:"
 
 #: en/02-git-basics/01-chapter2.markdown:652
 msgid ""
@@ -2481,6 +3008,15 @@ msgid ""
 "\t#       modified:   benchmarks.rb\n"
 "\t#"
 msgstr ""
+"\t$ git add .\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#       modified:   README.txt\n"
+"\t#       modified:   benchmarks.rb\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:662
 msgid ""
@@ -2488,6 +3024,8 @@ msgid ""
 "HEAD <file>...` to unstage\". So, let’s use that advice to unstage the "
 "`benchmarks.rb` file:"
 msgstr ""
+"`Changes to be commited` 밑에 `git reset HEAD <file>...`이라는 문장을 볼 수 있다. 이 명령으로 "
+"Unstage 상태로 변경할 수 있다. benchmarks.rb 파일을 Unstage 상태로 변경해보자:"
 
 #: en/02-git-basics/01-chapter2.markdown:664
 msgid ""
@@ -2508,16 +3046,32 @@ msgid ""
 "\t#       modified:   benchmarks.rb\n"
 "\t#"
 msgstr ""
+"\t$ git reset HEAD benchmarks.rb\n"
+"\tbenchmarks.rb: locally modified\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#       modified:   README.txt\n"
+"\t#\n"
+"\t# Changes not staged for commit:\n"
+"\t#   (use \"git add <file>...\" to update what will be committed)\n"
+"\t#   (use \"git checkout -- <file>...\" to discard changes in working "
+"directory)\n"
+"\t#\n"
+"\t#       modified:   benchmarks.rb\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:680
 msgid ""
 "The command is a bit strange, but it works. The `benchmarks.rb` file is "
 "modified but once again unstaged."
-msgstr ""
+msgstr "이 명령이 조금 어색하긴 하지만 일단 동작은 잘 수행되었다. benchmarks.rb 파일은 Unstage 상태가 됐다."
 
 #: en/02-git-basics/01-chapter2.markdown:682
 msgid "### Unmodifying a Modified File ###"
-msgstr ""
+msgstr "### Modified 파일 되돌리기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:684
 msgid ""
@@ -2528,6 +3082,9 @@ msgid ""
 "to do that, too. In the last example output, the unstaged area looks like "
 "this:"
 msgstr ""
+"어떻게 해야 benchmarks.rb 파일을 수정하고 나서 다시 되돌릴 수 있을까? 그러니까 최근 커밋된 버전으로(아니면 처음 "
+"Clone했을 때처럼 작업 디렉토리에 처음 Checkout 한 그 내용으로) 되돌리는 방법이 무얼까? `git status` 명령이 "
+"친절하게 알려준다. 바로 위에 있는 예제에서 Unstaged 부분을 보자:"
 
 #: en/02-git-basics/01-chapter2.markdown:686
 msgid ""
@@ -2539,6 +3096,13 @@ msgid ""
 "\t#       modified:   benchmarks.rb\n"
 "\t#"
 msgstr ""
+"\t# Changes not staged for commit:\n"
+"\t#   (use \"git add <file>...\" to update what will be committed)\n"
+"\t#   (use \"git checkout -- <file>...\" to discard changes in working "
+"directory)\n"
+"\t#\n"
+"\t#       modified:   benchmarks.rb\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:693
 msgid ""
@@ -2547,6 +3111,8 @@ msgid ""
 "older version, we highly recommend upgrading it to get some of these nicer "
 "usability features). Let’s do what it says:"
 msgstr ""
+"위의 메시지는 수정한 파일을 되돌리는 방법을 꽤 정확하게 알려준다(적어도 Git 1.6.1이후 버전부터는 그렇다. 만약 예전 것을 아직 "
+"사용하고 있으면 업그레드하는 것이 좋다. 편의성이 많이 개선됐다). 알려주는 대로 한 번 해보자:"
 
 #: en/02-git-basics/01-chapter2.markdown:695
 msgid ""
@@ -2559,6 +3125,14 @@ msgid ""
 "\t#       modified:   README.txt\n"
 "\t#"
 msgstr ""
+"\t$ git checkout -- benchmarks.rb\n"
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#       modified:   README.txt\n"
+"\t#"
 
 #: en/02-git-basics/01-chapter2.markdown:704
 msgid ""
@@ -2569,6 +3143,9 @@ msgid ""
 "out of the way, we’ll go over stashing and branching in the next chapter; "
 "these are generally better ways to go."
 msgstr ""
+"정상적으로 복원된 것을 알 수 있다. 하지만 명령은 꽤 위험한 명령이라는 것을 알아야 한다. 수정 이전의 파일로 덮어썼기 때문에 수정했던 "
+"내용은 전부 사라졌다. 수정한 내용이 진짜 마음에 들지 않을 때에만 사용하자. 정말 이렇게 삭제해야 한다면 Stashing과 "
+"Branch를 사용하자. 다음 장에서 다룰 것들이다. 이 방법이 훨씬 낫다."
 
 #: en/02-git-basics/01-chapter2.markdown:706
 msgid ""
@@ -2578,10 +3155,12 @@ msgid ""
 "data recovery). However, anything you lose that was never committed is "
 "likely never to be seen again."
 msgstr ""
+"Git으로 커밋한 모든 것은 언제나 복구할 수 있다. 삭제한 브랜치에 있었던 것도 `--amend` 옵션으로 다시 커밋한 것도 복구할 수 "
+"있다(자세한 것은 9장에서 다룬다). 하지만, 커밋하지 않고 잃어버린 것은 절대로 되돌릴 수 없다."
 
 #: en/02-git-basics/01-chapter2.markdown:708
 msgid "## Working with Remotes ##"
-msgstr ""
+msgstr "## 리모트 저장소 ##"
 
 #: en/02-git-basics/01-chapter2.markdown:710
 msgid ""
@@ -2596,10 +3175,15 @@ msgid ""
 "branches and define them as being tracked or not, and more. In this section, "
 "we’ll cover these remote-management skills."
 msgstr ""
+"리모트 저장소를 관리할 줄 알아야 다른 사람과 함께 일할 수 있다. 리모트 저장소는 인터넷이나 네트워크 어딘가에 있는 저장소를 말한다. "
+"저장소는 여러 개가 있을 수 있는데 어떤 저장소는 읽고 쓰기 모두 할 수 있고 어떤 저장소는 읽기 권한만 있을 수도 있다. 간단히 말해서 "
+"다른 사람들과 함께 일한다는 것은 리모트 저장소를 관리하고 데이터를 Push하고 Pull하는 것이다.그리고 저장소를 추가, 삭제하는 "
+"것뿐만 아니라 브랜치들을 관리하고 추적할지 말지 등을 결정하는 일이 저장소를 관리하는 일이다. 이번에는 리모트 저장소를 관리하는 방법에 "
+"대해 설명한다."
 
 #: en/02-git-basics/01-chapter2.markdown:713
 msgid "### Showing Your Remotes ###"
-msgstr ""
+msgstr "### 리모트 저장소 확인하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:715
 msgid ""
@@ -2608,6 +3192,8 @@ msgid ""
 "specified. If you’ve cloned your repository, you should at least see "
 "*origin* — that is the default name Git gives to the server you cloned from:"
 msgstr ""
+"`git remote` 명령으로 현재 프로젝트에 등록된 리모트 저장소들을 확인할 수 있다. 이 명령은 리모트 저장소의 단축 이름들을 "
+"보여준다. 저장소를 Clone한 경우는 origin이라는 리모트 저장소가 자동으로 등록되기 때문에 origin이라는 이름을 볼 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:717
 msgid ""
@@ -2622,12 +3208,22 @@ msgid ""
 "\t$ git remote\n"
 "\torigin"
 msgstr ""
+"\t$ git clone git://github.com/schacon/ticgit.git\n"
+"\tInitialized empty Git repository in /private/tmp/ticgit/.git/\n"
+"\tremote: Counting objects: 595, done.\n"
+"\tremote: Compressing objects: 100% (269/269), done.\n"
+"\tremote: Total 595 (delta 255), reused 589 (delta 253)\n"
+"\tReceiving objects: 100% (595/595), 73.31 KiB | 1 KiB/s, done.\n"
+"\tResolving deltas: 100% (255/255), done.\n"
+"\t$ cd ticgit\n"
+"\t$ git remote\n"
+"\torigin"
 
 #: en/02-git-basics/01-chapter2.markdown:728
 msgid ""
 "You can also specify `-v`, which shows you the URL that Git has stored for "
 "the shortname to be expanded to:"
-msgstr ""
+msgstr "`-v`옵션을 주어 단축이름과 URL을 함께 볼 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:730
 msgid ""
@@ -2635,12 +3231,15 @@ msgid ""
 "\torigin  git://github.com/schacon/ticgit.git (fetch)\n"
 "\torigin  git://github.com/schacon/ticgit.git (push)"
 msgstr ""
+"\t$ git remote -v\n"
+"\torigin  git://github.com/schacon/ticgit.git (fetch)\n"
+"\torigin  git://github.com/schacon/ticgit.git (push)"
 
 #: en/02-git-basics/01-chapter2.markdown:734
 msgid ""
 "If you have more than one remote, the command lists them all. For example, "
 "my Grit repository looks something like this."
-msgstr ""
+msgstr "리모트 저장소가 여러 개 있다면 이 명령은 전부 보여준다. 내 Grit 저장소에서 실행하면 다음과 같이 출력한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:736
 msgid ""
@@ -2652,6 +3251,13 @@ msgid ""
 "\tkoke      git://github.com/koke/grit.git\n"
 "\torigin    git@github.com:mojombo/grit.git"
 msgstr ""
+"\t$ cd grit\n"
+"\t$ git remote -v\n"
+"\tbakkdoor  git://github.com/bakkdoor/grit.git\n"
+"\tcho45     git://github.com/cho45/grit.git\n"
+"\tdefunkt   git://github.com/defunkt/grit.git\n"
+"\tkoke      git://github.com/koke/grit.git\n"
+"\torigin    git@github.com:mojombo/grit.git"
 
 #: en/02-git-basics/01-chapter2.markdown:744
 msgid ""
@@ -2659,10 +3265,12 @@ msgid ""
 "But notice that only the origin remote is an SSH URL, so it’s the only one I "
 "can push to (we’ll cover why this is in *Chapter 4*)."
 msgstr ""
+"이렇게 리모트 저장소가 여러 개가 등록되어 있으면 다른 사람이 기여한 내용(Contributions)을 쉽게 가져올 수 있다. 그리고 "
+"origin만 SSH URL이기 때문에 origin에만 Push할 수 있다(4장에서 좀 더 자세히 다룰 것이다)."
 
 #: en/02-git-basics/01-chapter2.markdown:746
 msgid "### Adding Remote Repositories ###"
-msgstr ""
+msgstr "### 리모트 저장소 추가하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:748
 msgid ""
@@ -2671,6 +3279,9 @@ msgid ""
 "remote Git repository as a shortname you can reference easily, run `git "
 "remote add [shortname] [url]`:"
 msgstr ""
+"이전 절에서도 리모트 저장소를 추가하는 것에 대해 설명했었지만 수박 겉핥기식으로 살펴봤을 뿐이었다. 여기에서는 리모트 저장소를 추가하는 "
+"방법을 자세하게 설명한다. 쉽게 새 리모트 저장소를 추가할 수 있는데 `git remote add [단축이름] [url]` 명령을 "
+"실행한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:750
 msgid ""
@@ -2681,6 +3292,12 @@ msgid ""
 "\torigin\tgit://github.com/schacon/ticgit.git\n"
 "\tpb\tgit://github.com/paulboone/ticgit.git"
 msgstr ""
+"\t$ git remote\n"
+"\torigin\n"
+"\t$ git remote add pb git://github.com/paulboone/ticgit.git\n"
+"\t$ git remote -v\n"
+"\torigin\tgit://github.com/schacon/ticgit.git\n"
+"\tpb\tgit://github.com/paulboone/ticgit.git"
 
 #: en/02-git-basics/01-chapter2.markdown:757
 msgid ""
@@ -2688,6 +3305,8 @@ msgid ""
 "URL. For example, if you want to fetch all the information that Paul has but "
 "that you don’t yet have in your repository, you can run git fetch pb:"
 msgstr ""
+"이제 URL 대신에 스트링 pb를 사용할 수 있다. 예를 들어 로컬 저장소에는 없지만 Paul의 저장소에 있는 것을 가져오려면 다음과 "
+"같이 실행한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:759
 msgid ""
@@ -2700,6 +3319,14 @@ msgid ""
 "\t * [new branch]      master     -> pb/master\n"
 "\t * [new branch]      ticgit     -> pb/ticgit"
 msgstr ""
+"\t$ git fetch pb\n"
+"\tremote: Counting objects: 58, done.\n"
+"\tremote: Compressing objects: 100% (41/41), done.\n"
+"\tremote: Total 44 (delta 24), reused 1 (delta 0)\n"
+"\tUnpacking objects: 100% (44/44), done.\n"
+"\tFrom git://github.com/paulboone/ticgit\n"
+"\t * [new branch]      master     -> pb/master\n"
+"\t * [new branch]      ticgit     -> pb/ticgit"
 
 #: en/02-git-basics/01-chapter2.markdown:768
 msgid ""
@@ -2707,18 +3334,20 @@ msgid ""
 "into one of your branches, or you can check out a local branch at that point "
 "if you want to inspect it."
 msgstr ""
+"로컬에서 `pb/master`가 Paul의 master 브랜치이다. 이것을 로컬 브랜치중 하나에 머지시킬 수도 있고 체크아웃하여 자세한 "
+"브랜치 내용을 확인할 수 있다."
 
 #: en/02-git-basics/01-chapter2.markdown:770
 msgid "### Fetching and Pulling from Your Remotes ###"
-msgstr ""
+msgstr "### 리모트 저장소를 Pull 하거나 Fetch 하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:772
 msgid "As you just saw, to get data from your remote projects, you can run:"
-msgstr ""
+msgstr "앞서 설명했듯이 리모트 저장소에서 데이터를 가져오려면 간단히 다음과 같이 실행한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:774
 msgid "\t$ git fetch [remote-name]"
-msgstr ""
+msgstr "\t$ git fetch [remote-name]"
 
 #: en/02-git-basics/01-chapter2.markdown:776
 msgid ""
@@ -2728,6 +3357,8 @@ msgid ""
 "or inspect at any time. (We’ll go over what branches are and how to use them "
 "in much more detail in *Chapter 3*.)"
 msgstr ""
+"이 명령은 로컬에는 없지만, 리모트 저장소에는 있는 데이터를 모두 가져온다. 그리고 나면 리모트 저장소의 모든 브랜치를 로컬에서 접근할 "
+"수 있어서 언제든지 머지를 하거나 내용을 살펴볼 수 있다(우리는 3장에서 브랜치를 사용하는 방법에 대해 좀 더 자세히 설명할 것이다)."
 
 #: en/02-git-basics/01-chapter2.markdown:778
 msgid ""
@@ -2739,6 +3370,10 @@ msgid ""
 "work or modify what you’re currently working on. You have to merge it "
 "manually into your work when you’re ready."
 msgstr ""
+"저장소를 Clone하면 명령은 자동으로 리모트 저장소를 origin이라는 이름으로 추가한다. 그래서 나중에 `git fetch "
+"origin`을 실행하면 Clone한 이후에(혹은 마지막으로 가져온 이후에) 수정된 것들을 모두 가져온다. `fetch` 명령은 리모트 "
+"저장소의 데이터를 모두 로컬로 가져오지만, 자동으로 머지하지 않는다. 그래서 당신이 로컬에서 하던 작업을 정리하고 나서 수동으로 머지해야 "
+"한다."
 
 #: en/02-git-basics/01-chapter2.markdown:780
 msgid ""
@@ -2752,10 +3387,14 @@ msgid ""
 "the server you originally cloned from and automatically tries to merge it "
 "into the code you’re currently working on."
 msgstr ""
+"그냥 쉽게 `git pull` 명령으로 리모트 저장소 브랜치에서 데이터를 가져올 뿐만 아니라 자동으로 로컬 브랜치와 머지시킬 수 있다. "
+"먼저 `git clone` 명령은 자동으로 로컬의 master 브랜치가 리모트 저장소의 master 브랜치를 추적하도록 한다(물론 리모트 "
+"저장소에 master 브랜치가 있다고 가정에서). 그리고 `git pull` 명령은 Clone한 서버에서 데이터를 가져오고 그 데이터를 "
+"자동으로 현재 작업하는 코드와 머지시킨다."
 
 #: en/02-git-basics/01-chapter2.markdown:782
 msgid "### Pushing to Your Remotes ###"
-msgstr ""
+msgstr "### 리모트 저장소에 Push하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:784
 msgid ""
@@ -2766,10 +3405,13 @@ msgid ""
 "automatically), then you can run this to push your work back up to the "
 "server:"
 msgstr ""
+"프로젝트를 공유하고 싶을 때 리모트 저장소에 Push할 수 있다. 이 명령은 `git push [리모트 저장소 이름] [브랜치 "
+"이름]`으로 단순하다. master 브랜치를 `origin` 서버에 Push하려면(다시 말하지만 Clone하면 보통 자동으로 origin "
+"이름이 생성된다) 다음과 같이 서버에 Push한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:786
 msgid "\t$ git push origin master"
-msgstr ""
+msgstr "\t$ git push origin master"
 
 #: en/02-git-basics/01-chapter2.markdown:788
 msgid ""
@@ -2780,10 +3422,13 @@ msgid ""
 "first and incorporate it into yours before you’ll be allowed to push. See "
 "*Chapter 3* for more detailed information on how to push to remote servers."
 msgstr ""
+"이 명령은 Clone한 리모트 저장소에 쓰기 권한이 있고, Clone하고 난 이후 아무도 리모트 저장소에 Push하지 않았을 때만 사용할 "
+"수 있다. 다시 말해서 Clone한 사람이 여러 명 있을 때, 다른 사람이 Push한 후에 Push하려고 하면 Push할 수 없다. "
+"먼저 다른 사람이 작업한 것을 가져와서 머지한 후에 Push할 수 있다. 3장에서 서버에 Push하는 방법에 대해 자세히 설명할 것이다."
 
 #: en/02-git-basics/01-chapter2.markdown:790
 msgid "### Inspecting a Remote ###"
-msgstr ""
+msgstr "### 리모트 저장소 살펴보기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:792
 msgid ""
@@ -2791,6 +3436,8 @@ msgid ""
 "the `git remote show [remote-name]` command. If you run this command with a "
 "particular shortname, such as `origin`, you get something like this:"
 msgstr ""
+"`git remote show [리모트 저장소 이름]` 명령으로 리모트 저장소의 구체적인 정보를 확인할 수 있다. `origin` 같은 "
+"단축이름으로 이 명령을 실행하면 다음과 같은 정보를 볼 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:794
 msgid ""
@@ -2803,6 +3450,14 @@ msgid ""
 "\t    master\n"
 "\t    ticgit"
 msgstr ""
+"\t$ git remote show origin\n"
+"\t* remote origin\n"
+"\t  URL: git://github.com/schacon/ticgit.git\n"
+"\t  Remote branch merged with 'git pull' while on branch master\n"
+"\t    master\n"
+"\t  Tracked remote branches\n"
+"\t    master\n"
+"\t    ticgit"
 
 #: en/02-git-basics/01-chapter2.markdown:803
 msgid ""
@@ -2812,6 +3467,9 @@ msgid ""
 "branch on the remote after it fetches all the remote references. It also "
 "lists all the remote references it has pulled down."
 msgstr ""
+"리모트 저장소의 URL과 추적하는 브랜치를 출력한다. 이 명령은 `git pull` 명령을 실행할 때 master 브랜치와 머지할 "
+"브랜치가 무엇인지 보여 준다. `git pull` 명령은 리모트 저장소 브랜치의 데이터를 모두 가져오고 나서 자동으로 머지할 것이다. "
+"그리고 가져온 모든 리모트 저장소 정보도 출력한다."
 
 #: en/02-git-basics/01-chapter2.markdown:805
 msgid ""
@@ -2819,6 +3477,8 @@ msgid ""
 "more heavily, however, you may see much more information from `git remote "
 "show`:"
 msgstr ""
+"좀 더 Git을 열심히 사용하게 되면 `git remote show` 명령은 더 많은 정보를 보여줄 것이다. 여러분도 언젠가는 다음과 "
+"같은 메시지(역주, 다수의 브랜치를 사용하는 메시지)를 볼 날이 올 것이다."
 
 #: en/02-git-basics/01-chapter2.markdown:807
 msgid ""
@@ -2844,6 +3504,27 @@ msgid ""
 "\t  Local branch pushed with 'git push'\n"
 "\t    master:master"
 msgstr ""
+"\t$ git remote show origin\n"
+"\t* remote origin\n"
+"\t  URL: git@github.com:defunkt/github.git\n"
+"\t  Remote branch merged with 'git pull' while on branch issues\n"
+"\t    issues\n"
+"\t  Remote branch merged with 'git pull' while on branch master\n"
+"\t    master\n"
+"\t  New remote branches (next fetch will store in remotes/origin)\n"
+"\t    caching\n"
+"\t  Stale tracking branches (use 'git remote prune')\n"
+"\t    libwalker\n"
+"\t    walker2\n"
+"\t  Tracked remote branches\n"
+"\t    acl\n"
+"\t    apiv2\n"
+"\t    dashboard2\n"
+"\t    issues\n"
+"\t    master\n"
+"\t    postgres\n"
+"\t  Local branch pushed with 'git push'\n"
+"\t    master:master"
 
 #: en/02-git-basics/01-chapter2.markdown:829
 msgid ""
@@ -2853,10 +3534,13 @@ msgid ""
 "removed from the server, and multiple branches that are automatically merged "
 "when you run `git pull`."
 msgstr ""
+"브랜치명을 생략하고 `git push` 명령을 실행할 때 어떤 브랜치가 어떤 브랜치로 Push되는지 보여준다. 또 아직 로컬로 가져오지 "
+"않은 리모트 저장소의 브랜치는 어떤 것들이 있는지, 서버에서는 삭제됐지만 아직 가지고 있는 브랜치는 어떤 것인지, `git pull` "
+"명령을 실행했을 때 자동으로 머지할 브랜치는 어떤 것이 있는지 보여준다."
 
 #: en/02-git-basics/01-chapter2.markdown:831
 msgid "### Removing and Renaming Remotes ###"
-msgstr ""
+msgstr "### 리모트 저장소 이름을 바꾸거나 리모트 저장소를 삭제하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:833
 msgid ""
@@ -2864,6 +3548,8 @@ msgid ""
 "remote rename` to change a remote’s shortname. For instance, if you want to "
 "rename `pb` to `paul`, you can do so with `git remote rename`:"
 msgstr ""
+"`git remote rename` 명령으로 리모트 저장소의 이름을 변경할 수 있다. 예를 들어 `pb`를 `paul`로 변경하려면 "
+"`git remote rename` 명령을 사용한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:835
 msgid ""
@@ -2872,12 +3558,18 @@ msgid ""
 "\torigin\n"
 "\tpaul"
 msgstr ""
+"\t$ git remote rename pb paul\n"
+"\t$ git remote\n"
+"\torigin\n"
+"\tpaul"
 
 #: en/02-git-basics/01-chapter2.markdown:840
 msgid ""
 "It’s worth mentioning that this changes your remote branch names, too. What "
 "used to be referenced at `pb/master` is now at `paul/master`."
 msgstr ""
+"리모트 저장소의 브랜치 이름도 바뀐다. 여태까지 `pb/master`로 리모트 저장소 브랜치를 사용했으면 이제는 "
+"`paul/master`라고 사용해야 한다."
 
 #: en/02-git-basics/01-chapter2.markdown:842
 msgid ""
@@ -2885,6 +3577,8 @@ msgid ""
 "or are no longer using a particular mirror, or perhaps a contributor isn’t "
 "contributing anymore — you can use `git remote rm`:"
 msgstr ""
+"리모트 저장소를 삭제해야 한다면 `git remote rm` 명령을 사용한다. 서버 정보가 바뀌었을 때, 더는 특별한 미러가 필요하지 "
+"않을 때, 기여자가 더는 활동하지 않고 있을 때 필요하다:"
 
 #: en/02-git-basics/01-chapter2.markdown:844
 msgid ""
@@ -2892,10 +3586,13 @@ msgid ""
 "\t$ git remote\n"
 "\torigin"
 msgstr ""
+"\t$ git remote rm paul\n"
+"\t$ git remote\n"
+"\torigin"
 
 #: en/02-git-basics/01-chapter2.markdown:848
 msgid "## Tagging ##"
-msgstr ""
+msgstr "## Tagging ##"
 
 #: en/02-git-basics/01-chapter2.markdown:850
 msgid ""
@@ -2905,15 +3602,17 @@ msgid ""
 "available tags, how to create new tags, and what the different types of tags "
 "are."
 msgstr ""
+"다른 VCS처럼 Git도 Tag를 지원한다. 사람들은 보통 릴리즈할 때 사용한다(v1.0, 등등). 이번에는 Tag를 조회하고 생성하는 "
+"법과 Tag의 종류를 설명한다. "
 
 #: en/02-git-basics/01-chapter2.markdown:852
 msgid "### Listing Your Tags ###"
-msgstr ""
+msgstr "### Tag 조회하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:854
 msgid ""
 "Listing the available tags in Git is straightforward. Just type `git tag`:"
-msgstr ""
+msgstr "우선 `git tag` 명령으로 이미 만들어져 있어 사용할 수 있는 Tag가 있는지 확인할 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:856
 msgid ""
@@ -2921,12 +3620,15 @@ msgid ""
 "\tv0.1\n"
 "\tv1.3"
 msgstr ""
+"\t$ git tag\n"
+"\tv0.1\n"
+"\tv1.3"
 
 #: en/02-git-basics/01-chapter2.markdown:860
 msgid ""
 "This command lists the tags in alphabetical order; the order in which they "
 "appear has no real importance."
-msgstr ""
+msgstr "이 명령은 알파벳 순서로 Tag들을 보여준다. 사실 순서는 별로 중요한 게 아니다."
 
 #: en/02-git-basics/01-chapter2.markdown:862
 msgid ""
@@ -2934,6 +3636,8 @@ msgid ""
 "for instance, contains more than 240 tags. If you’re only interested in "
 "looking at the 1.4.2 series, you can run this:"
 msgstr ""
+"검색 패턴을 사용하여 Tag를 검색할 수 있다. Git 소스 저장소는 240여 개의 Tag가 있다. 만약 1.4.2 버전의 Tag들만 "
+"검색하고 싶으면 다음과 같이 실행한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:864
 msgid ""
@@ -2943,10 +3647,15 @@ msgid ""
 "\tv1.4.2.3\n"
 "\tv1.4.2.4"
 msgstr ""
+"\t$ git tag -l 'v1.4.2.*'\n"
+"\tv1.4.2.1\n"
+"\tv1.4.2.2\n"
+"\tv1.4.2.3\n"
+"\tv1.4.2.4"
 
 #: en/02-git-basics/01-chapter2.markdown:870
 msgid "### Creating Tags ###"
-msgstr ""
+msgstr "### Tag 붙이기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:872
 msgid ""
@@ -2960,16 +3669,21 @@ msgid ""
 "or for some reason don’t want to keep the other information, lightweight "
 "tags are available too."
 msgstr ""
+"Git의 Tag는 Lightweight Tag와 Annotated Tag로 두 종류가 있다. Lightweight Tag는 브랜치와 "
+"비슷한데 브랜치처럼 가리키는 지점을 최신 커밋으로 이동시키지 않는다. 단순히 특정 커밋에 대한 포인터일 뿐이다. 한편, Annotated "
+"Tag는 Git 데이터베이스에 Tag를 만든 사람의 이름, 이메일과 Tag를 만든 날짜, 그리고 Tag 메시지도 저장한다. 또 "
+"GPG(GNU Privacy Guard)로 서명할 수도 있다. 이 모든 정보를 저장해둬야 할 때에만 Annotated Tag를 추천한다. "
+"그냥 다른 정보를 저장하지 않는 단순한 Tag가 필요하다면 Lightweight Tag를 사용하는 것이 좋다."
 
 #: en/02-git-basics/01-chapter2.markdown:874
 msgid "### Annotated Tags ###"
-msgstr ""
+msgstr "### Annotated Tags ###"
 
 #: en/02-git-basics/01-chapter2.markdown:876
 msgid ""
 "Creating an annotated tag in Git is simple. The easiest way is to specify `-"
 "a` when you run the `tag` command:"
-msgstr ""
+msgstr "Annotated Tag를 만드는 방법은 간단하다. `tag` 명령을 실행할 때 `-a` 옵션을 추가한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:878
 msgid ""
@@ -2979,6 +3693,11 @@ msgid ""
 "\tv1.3\n"
 "\tv1.4"
 msgstr ""
+"\t$ git tag -a v1.4 -m 'my version 1.4'\n"
+"\t$ git tag\n"
+"\tv0.1\n"
+"\tv1.3\n"
+"\tv1.4"
 
 #: en/02-git-basics/01-chapter2.markdown:884
 msgid ""
@@ -2986,12 +3705,14 @@ msgid ""
 "don’t specify a message for an annotated tag, Git launches your editor so "
 "you can type it in."
 msgstr ""
+"`-m` 옵션으로 Tag를 저장할 때 메시지를 함께 저장할 수 있다. 명령을 실행할 때 메시지를 입력하지 않으면 Git은 편집기를 "
+"실행시킨다."
 
 #: en/02-git-basics/01-chapter2.markdown:886
 msgid ""
 "You can see the tag data along with the commit that was tagged by using the "
 "`git show` command:"
-msgstr ""
+msgstr "`git show` 명령으로 Tag 정보와 커밋 정보를 모두 확인할 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:888
 msgid ""
@@ -3000,6 +3721,10 @@ msgid ""
 "\tTagger: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Mon Feb 9 14:45:11 2009 -0800"
 msgstr ""
+"\t$ git show v1.4\n"
+"\ttag v1.4\n"
+"\tTagger: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Mon Feb 9 14:45:11 2009 -0800"
 
 #: en/02-git-basics/01-chapter2.markdown:893
 msgid ""
@@ -3009,27 +3734,33 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Sun Feb 8 19:02:46 2009 -0800"
 msgstr ""
+"\tmy version 1.4\n"
+"\tcommit 15027957951b64cf874c3557a0f3547bd83b3ff6\n"
+"\tMerge: 4a447f7... a6b4c97...\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Sun Feb 8 19:02:46 2009 -0800"
 
 #: en/02-git-basics/01-chapter2.markdown:899
 msgctxt "en/02-git-basics/01-chapter2.markdown:899"
 msgid "\t    Merge branch 'experiment'"
-msgstr ""
+msgstr "\t    Merge branch 'experiment'"
 
 #: en/02-git-basics/01-chapter2.markdown:901
 msgid ""
 "That shows the tagger information, the date the commit was tagged, and the "
 "annotation message before showing the commit information."
 msgstr ""
+"커밋 정보를 보여주기 전에 먼저 Tag를 만든 사람이 누구인지, 언제 Tag를 만들었는지, 그리고 Tag 메시지가 무엇인지 보여준다."
 
 #: en/02-git-basics/01-chapter2.markdown:903
 msgid "### Signed Tags ###"
-msgstr ""
+msgstr "### Tag에 서명하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:905
 msgid ""
 "You can also sign your tags with GPG, assuming you have a private key. All "
 "you have to do is use `-s` instead of `-a`:"
-msgstr ""
+msgstr "GPG 개인키가 있으면 Tag에 서명할 수 있다. 이때에는 `-a`옵션 대신 `-s`를 사용한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:907
 msgid ""
@@ -3038,12 +3769,16 @@ msgid ""
 "\tuser: \"Scott Chacon <schacon@gee-mail.com>\"\n"
 "\t1024-bit DSA key, ID F721C45A, created 2009-02-09"
 msgstr ""
+"\t$ git tag -s v1.5 -m 'my signed 1.5 tag'\n"
+"\tYou need a passphrase to unlock the secret key for\n"
+"\tuser: \"Scott Chacon <schacon@gee-mail.com>\"\n"
+"\t1024-bit DSA key, ID F721C45A, created 2009-02-09"
 
 #: en/02-git-basics/01-chapter2.markdown:912
 msgid ""
 "If you run `git show` on that tag, you can see your GPG signature attached "
 "to it:"
-msgstr ""
+msgstr "이 Tag에 `git show`를 실행하면 GPG 서명도 볼 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:914
 msgid ""
@@ -3052,6 +3787,10 @@ msgid ""
 "\tTagger: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Mon Feb 9 15:22:20 2009 -0800"
 msgstr ""
+"\t$ git show v1.5\n"
+"\ttag v1.5\n"
+"\tTagger: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Mon Feb 9 15:22:20 2009 -0800"
 
 #: en/02-git-basics/01-chapter2.markdown:919
 msgid ""
@@ -3059,6 +3798,9 @@ msgid ""
 "\t-----BEGIN PGP SIGNATURE-----\n"
 "\tVersion: GnuPG v1.4.8 (Darwin)"
 msgstr ""
+"\tmy signed 1.5 tag\n"
+"\t-----BEGIN PGP SIGNATURE-----\n"
+"\tVersion: GnuPG v1.4.8 (Darwin)"
 
 #: en/02-git-basics/01-chapter2.markdown:923
 msgid ""
@@ -3071,19 +3813,27 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Sun Feb 8 19:02:46 2009 -0800"
 msgstr ""
+"\tiEYEABECAAYFAkmQurIACgkQON3DxfchxFr5cACeIMN+ZxLKggJQf0QYiQBwgySN\n"
+"\tKi0An2JeAVUCAiJ7Ox6ZEtK+NvZAj82/\n"
+"\t=WryJ\n"
+"\t-----END PGP SIGNATURE-----\n"
+"\tcommit 15027957951b64cf874c3557a0f3547bd83b3ff6\n"
+"\tMerge: 4a447f7... a6b4c97...\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Sun Feb 8 19:02:46 2009 -0800"
 
 #: en/02-git-basics/01-chapter2.markdown:932
 msgctxt "en/02-git-basics/01-chapter2.markdown:932"
 msgid "\t    Merge branch 'experiment'"
-msgstr ""
+msgstr "\t    Merge branch 'experiment'"
 
 #: en/02-git-basics/01-chapter2.markdown:934
 msgid "A bit later, you’ll learn how to verify signed tags."
-msgstr ""
+msgstr "잠시 후 서명한 Tag를 검증하는 방법도 설명할 것이다."
 
 #: en/02-git-basics/01-chapter2.markdown:936
 msgid "### Lightweight Tags ###"
-msgstr ""
+msgstr "### Lightweight Tags ###"
 
 #: en/02-git-basics/01-chapter2.markdown:938
 msgid ""
@@ -3091,6 +3841,8 @@ msgid ""
 "commit checksum stored in a file — no other information is kept. To create a "
 "lightweight tag, don’t supply the `-a`, `-s`, or `-m` option:"
 msgstr ""
+"Lightweight Tag는 기본적으로 파일에 커밋 체크섬을 저장하는 것뿐이다. 다른 정보는 저장하지 않는다. Lightweight "
+"Tag를 만들 때에는 `-a`, `-s`, `-m` 옵션을 사용하지 않는다:"
 
 #: en/02-git-basics/01-chapter2.markdown:940
 msgid ""
@@ -3102,12 +3854,19 @@ msgid ""
 "\tv1.4-lw\n"
 "\tv1.5"
 msgstr ""
+"\t$ git tag v1.4-lw\n"
+"\t$ git tag\n"
+"\tv0.1\n"
+"\tv1.3\n"
+"\tv1.4\n"
+"\tv1.4-lw\n"
+"\tv1.5"
 
 #: en/02-git-basics/01-chapter2.markdown:948
 msgid ""
 "This time, if you run `git show` on the tag, you don’t see the extra tag "
 "information. The command just shows the commit:"
-msgstr ""
+msgstr "이 Tag에 `git show`를 실행하면 별도의 Tag 정보를 확인할 수 없다. 이 명령은 단순히 커밋 정보만을 보여준다:"
 
 #: en/02-git-basics/01-chapter2.markdown:950
 msgid ""
@@ -3117,15 +3876,20 @@ msgid ""
 "\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Sun Feb 8 19:02:46 2009 -0800"
 msgstr ""
+"\t$ git show v1.4-lw\n"
+"\tcommit 15027957951b64cf874c3557a0f3547bd83b3ff6\n"
+"\tMerge: 4a447f7... a6b4c97...\n"
+"\tAuthor: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Sun Feb 8 19:02:46 2009 -0800"
 
 #: en/02-git-basics/01-chapter2.markdown:956
 msgctxt "en/02-git-basics/01-chapter2.markdown:956"
 msgid "\t    Merge branch 'experiment'"
-msgstr ""
+msgstr "\t    Merge branch 'experiment'"
 
 #: en/02-git-basics/01-chapter2.markdown:958
 msgid "### Verifying Tags ###"
-msgstr ""
+msgstr "### Tag 검증하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:960
 msgid ""
@@ -3133,6 +3897,8 @@ msgid ""
 "GPG to verify the signature. You need the signer’s public key in your "
 "keyring for this to work properly:"
 msgstr ""
+"`git tag -v [Tag 이름]` 명령으로 서명한 Tag를 검증한다. 이 명령은 GPG를 사용하여 서명을 검증한다. 그래서 서명자의 "
+"GPG 공개키가 필요하다. 이 공개키가 Keyring에 있어야만 이 명령이 성공적으로 실행된다:"
 
 #: en/02-git-basics/01-chapter2.markdown:962
 msgid ""
@@ -3142,10 +3908,15 @@ msgid ""
 "\ttag v1.4.2.1\n"
 "\ttagger Junio C Hamano <junkio@cox.net> 1158138501 -0700"
 msgstr ""
+"\t$ git tag -v v1.4.2.1\n"
+"\tobject 883653babd8ee7ea23e6a5c392bb739348b1eb61\n"
+"\ttype commit\n"
+"\ttag v1.4.2.1\n"
+"\ttagger Junio C Hamano <junkio@cox.net> 1158138501 -0700"
 
 #: en/02-git-basics/01-chapter2.markdown:968
 msgid "\tGIT 1.4.2.1"
-msgstr ""
+msgstr "\tGIT 1.4.2.1"
 
 #: en/02-git-basics/01-chapter2.markdown:970
 msgid ""
@@ -3156,12 +3927,17 @@ msgid ""
 "\tgpg:                 aka \"[jpeg image of size 1513]\"\n"
 "\tPrimary key fingerprint: 3565 2A26 2040 E066 C9A7  4A7D C0C6 D9A4 F311 9B9A"
 msgstr ""
+"\tMinor fixes since 1.4.2, including git-mv and git-http with alternates.\n"
+"\tgpg: Signature made Wed Sep 13 02:08:25 2006 PDT using DSA key ID F3119B9A\n"
+"\tgpg: Good signature from \"Junio C Hamano <junkio@cox.net>\"\n"
+"\tgpg:                 aka \"[jpeg image of size 1513]\"\n"
+"\tPrimary key fingerprint: 3565 2A26 2040 E066 C9A7  4A7D C0C6 D9A4 F311 9B9A"
 
 #: en/02-git-basics/01-chapter2.markdown:976
 msgid ""
 "If you don’t have the signer’s public key, you get something like this "
 "instead:"
-msgstr ""
+msgstr "만약 서명자의 공개키가 없으면 다음과 같은 메시지를 출력한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:978
 msgid ""
@@ -3170,16 +3946,19 @@ msgid ""
 "\tgpg: Can't check signature: public key not found\n"
 "\terror: could not verify the tag 'v1.4.2.1'"
 msgstr ""
+"\tgpg: Signature made Wed Sep 13 02:08:25 2006 PDT using DSA key ID F3119B9A\n"
+"\tgpg: Can't check signature: public key not found\n"
+"\terror: could not verify the tag 'v1.4.2.1'"
 
 #: en/02-git-basics/01-chapter2.markdown:982
 msgid "### Tagging Later ###"
-msgstr ""
+msgstr "### 나중에 Tag하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:984
 msgid ""
 "You can also tag commits after you’ve moved past them. Suppose your commit "
 "history looks like this:"
-msgstr ""
+msgstr "예전 커밋에 대해서도 Tag할 수 있다. 커밋 히스토리는 다음과 같고:"
 
 #: en/02-git-basics/01-chapter2.markdown:986
 msgid ""
@@ -3195,6 +3974,17 @@ msgid ""
 "\t964f16d36dfccde844893cac5b347e7b3d44abbc commit the todo\n"
 "\t8a5cbc430f1a9c3d00faaeffd07798508422908a updated readme"
 msgstr ""
+"\t$ git log --pretty=oneline\n"
+"\t15027957951b64cf874c3557a0f3547bd83b3ff6 Merge branch 'experiment'\n"
+"\ta6b4c97498bd301d84096da251c98a07c7723e65 beginning write support\n"
+"\t0d52aaab4479697da7686c15f77a3d64d9165190 one more thing\n"
+"\t6d52a271eda8725415634dd79daabbc4d9b6008e Merge branch 'experiment'\n"
+"\t0b7434d86859cc7b8c3d5e1dddfed66ff742fcbc added a commit function\n"
+"\t4682c3261057305bdd616e23b64b0857d832627b added a todo file\n"
+"\t166ae0c4d3f420721acbb115cc33848dfcc2121a started write support\n"
+"\t9fceb02d0ae598e95dc970b74767f19372d61af8 updated rakefile\n"
+"\t964f16d36dfccde844893cac5b347e7b3d44abbc commit the todo\n"
+"\t8a5cbc430f1a9c3d00faaeffd07798508422908a updated readme"
 
 #: en/02-git-basics/01-chapter2.markdown:998
 msgid ""
@@ -3203,14 +3993,16 @@ msgid ""
 "commit, you specify the commit checksum (or part of it) at the end of the "
 "command:"
 msgstr ""
+"프로젝트에 \"updated rakefile\" 커밋을 v1.2로 Tag하지 못했다고 해도 지금 Tag를 붙일 수 있다. 특정 커밋에 "
+"Tag하기 위해서 명령의 끝에 커밋 체크섬을 명시한다(긴 체크섬을 전부 사용할 필요는 없다):"
 
 #: en/02-git-basics/01-chapter2.markdown:1000
 msgid "\t$ git tag -a v1.2 -m 'version 1.2' 9fceb02"
-msgstr ""
+msgstr "\t$ git tag -a v1.2 -m 'version 1.2' 9fceb02"
 
 #: en/02-git-basics/01-chapter2.markdown:1002
 msgid "You can see that you’ve tagged the commit:"
-msgstr ""
+msgstr "이제 다음과 같이 만든 Tag를 확인한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:1004
 msgid ""
@@ -3222,6 +4014,13 @@ msgid ""
 "\tv1.4-lw\n"
 "\tv1.5"
 msgstr ""
+"\t$ git tag\n"
+"\tv0.1\n"
+"\tv1.2\n"
+"\tv1.3\n"
+"\tv1.4\n"
+"\tv1.4-lw\n"
+"\tv1.5"
 
 #: en/02-git-basics/01-chapter2.markdown:1012
 msgid ""
@@ -3230,6 +4029,10 @@ msgid ""
 "\tTagger: Scott Chacon <schacon@gee-mail.com>\n"
 "\tDate:   Mon Feb 9 15:32:16 2009 -0800"
 msgstr ""
+"\t$ git show v1.2\n"
+"\ttag v1.2\n"
+"\tTagger: Scott Chacon <schacon@gee-mail.com>\n"
+"\tDate:   Mon Feb 9 15:32:16 2009 -0800"
 
 #: en/02-git-basics/01-chapter2.markdown:1017
 msgid ""
@@ -3238,16 +4041,22 @@ msgid ""
 "\tAuthor: Magnus Chacon <mchacon@gee-mail.com>\n"
 "\tDate:   Sun Apr 27 20:43:35 2008 -0700"
 msgstr ""
+"\tversion 1.2\n"
+"\tcommit 9fceb02d0ae598e95dc970b74767f19372d61af8\n"
+"\tAuthor: Magnus Chacon <mchacon@gee-mail.com>\n"
+"\tDate:   Sun Apr 27 20:43:35 2008 -0700"
 
 #: en/02-git-basics/01-chapter2.markdown:1022
 msgid ""
 "\t    updated rakefile\n"
 "\t..."
 msgstr ""
+"\t    updated rakefile\n"
+"\t..."
 
 #: en/02-git-basics/01-chapter2.markdown:1025
 msgid "### Sharing Tags ###"
-msgstr ""
+msgstr "### Tag 공유하기 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:1027
 msgid ""
@@ -3256,6 +4065,8 @@ msgid ""
 "created them.  This process is just like sharing remote branches — you can "
 "run `git push origin [tagname]`."
 msgstr ""
+"`git push` 명령은 자동으로 리모트 서버에 Tag를 전송하지 않는다. Tag를 만들었으면 서버에 별도로 Push해야 한다. "
+"브랜치를 공유하는 것과 같은 방법으로 할 수 있다. `git push origin [Tag 이름]`을 실행한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:1029
 msgid ""
@@ -3267,6 +4078,13 @@ msgid ""
 "\tTo git@github.com:schacon/simplegit.git\n"
 "\t* [new tag]         v1.5 -> v1.5"
 msgstr ""
+"\t$ git push origin v1.5\n"
+"\tCounting objects: 50, done.\n"
+"\tCompressing objects: 100% (38/38), done.\n"
+"\tWriting objects: 100% (44/44), 4.56 KiB, done.\n"
+"\tTotal 44 (delta 18), reused 8 (delta 1)\n"
+"\tTo git@github.com:schacon/simplegit.git\n"
+"\t* [new tag]         v1.5 -> v1.5"
 
 #: en/02-git-basics/01-chapter2.markdown:1037
 msgid ""
@@ -3274,6 +4092,8 @@ msgid ""
 "the `--tags` option to the `git push` command.  This will transfer all of "
 "your tags to the remote server that are not already there."
 msgstr ""
+"만약 한 번에 Tag를 여러 개 Push하고 싶으면 `--tags` 옵션을 추가하여 `git push`명령을 실행한다. 이 명령으로 "
+"리모트 서버에 없는 Tag를 모두 전송할 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:1039
 msgid ""
@@ -3289,16 +4109,27 @@ msgid ""
 "\t * [new tag]         v1.4-lw -> v1.4-lw\n"
 "\t * [new tag]         v1.5 -> v1.5"
 msgstr ""
+"\t$ git push origin --tags\n"
+"\tCounting objects: 50, done.\n"
+"\tCompressing objects: 100% (38/38), done.\n"
+"\tWriting objects: 100% (44/44), 4.56 KiB, done.\n"
+"\tTotal 44 (delta 18), reused 8 (delta 1)\n"
+"\tTo git@github.com:schacon/simplegit.git\n"
+"\t * [new tag]         v0.1 -> v0.1\n"
+"\t * [new tag]         v1.2 -> v1.2\n"
+"\t * [new tag]         v1.4 -> v1.4\n"
+"\t * [new tag]         v1.4-lw -> v1.4-lw\n"
+"\t * [new tag]         v1.5 -> v1.5"
 
 #: en/02-git-basics/01-chapter2.markdown:1051
 msgid ""
 "Now, when someone else clones or pulls from your repository, they will get "
 "all your tags as well."
-msgstr ""
+msgstr "누군가 저장소에서 Clone하거나 Pull을 하면 모든 Tag 정보도 함께 전송된다."
 
 #: en/02-git-basics/01-chapter2.markdown:1053
 msgid "## Tips and Tricks ##"
-msgstr ""
+msgstr "## 팁과 트릭 ##"
 
 #: en/02-git-basics/01-chapter2.markdown:1055
 msgid ""
@@ -3308,10 +4139,13 @@ msgid ""
 "or assume you’ve used them later in the book; but you should probably know "
 "how to do them."
 msgstr ""
+"Git의 기초를 마치기 전에 Git을 좀 더 쉽고 편안하게 쓸 수 있게 만들어 줄 몇 가지 팁과 트릭도 설명한다. 이런 팁 없이 Git을 "
+"사용하는 사람들도 많다. 우리는 이 책에서 더는 이런 팁을 거론하지 않을 것이고 당신이 이런 팁을 알고 있다고 가정할 것이다. 그래서 "
+"알고 있는 것이 좋다."
 
 #: en/02-git-basics/01-chapter2.markdown:1057
 msgid "### Auto-Completion ###"
-msgstr ""
+msgstr "### 자동완성 ###"
 
 #: en/02-git-basics/01-chapter2.markdown:1059
 msgid ""
@@ -3320,10 +4154,13 @@ msgid ""
 "completion` directory; there should be a file called `git-completion.bash`. "
 "Copy this file to your home directory, and add this to your `.bashrc` file:"
 msgstr ""
+"Bash 쉘을 쓰고 있다면 멋진 자동완성(Auto-completion) 기능을 사용할 수 있다. Git의 소스코드를 다운받아 "
+"`contrib/completion` 디렉토리를 살펴보면 `git-completion.bash`라는 파일이 있을 것이다. 그 파일을 홈 "
+"디렉토리에 카피하고 `.bashrc` 파일에 다음과 같은 내용을 추가하자:"
 
 #: en/02-git-basics/01-chapter2.markdown:1061
 msgid "\tsource ~/.git-completion.bash"
-msgstr ""
+msgstr "\tsource ~/.git-completion.bash"
 
 #: en/02-git-basics/01-chapter2.markdown:1063
 msgid ""
@@ -3333,30 +4170,37 @@ msgid ""
 "Linux systems. This is a directory of scripts that Bash will automatically "
 "load to provide shell completions."
 msgstr ""
+"또 모든 사용자가 사용할 수 있게 설정할 수 있다. Mac 시스템이라면 이 스크립트를 "
+"`/opt/local/etc/bash_completion.d` 디렉토리에 복사하고 리눅스라면 "
+"`/etc/bash_completion.d/`에 복사한다. 이 디렉토리는 Bash가 자동완성을 지원하기 위해 사용하는 디렉토리다."
 
 #: en/02-git-basics/01-chapter2.markdown:1065
 msgid ""
 "If you’re using Windows with Git Bash, which is the default when installing "
 "Git on Windows with msysGit, auto-completion should be preconfigured."
-msgstr ""
+msgstr "윈도우에 msysGit을 설치해서 Git Bash를 사용하는 경우에는 자동완성이 미리 설정되어 있다."
 
 #: en/02-git-basics/01-chapter2.markdown:1067
 msgid ""
 "Press the Tab key when you’re writing a Git command, and it should return a "
 "set of suggestions for you to pick from:"
-msgstr ""
+msgstr "Git 명령을 입력할 때 `<Tab>` 키를 누르면 Git이 제안하는 명령들이 출력된다:"
 
 #: en/02-git-basics/01-chapter2.markdown:1069
 msgid ""
 "\t$ git co<tab><tab>\n"
 "\tcommit config"
 msgstr ""
+"\t$ git co<tab><tab>\n"
+"\tcommit config"
 
 #: en/02-git-basics/01-chapter2.markdown:1072
 msgid ""
 "In this case, typing `git co` and then pressing the Tab key twice suggests "
 "commit and config. Adding `m<tab>` completes `git commit` automatically."
 msgstr ""
+"이 경우 `git co`를 입력하고 Tab 키를 두번 누르면 commit과 config를 제안한다. 이 때 `m<tab>`을 입력하면 "
+"자동으로 `git commit`명령을 완성한다."
 
 #: en/02-git-basics/01-chapter2.markdown:1074
 msgid ""
@@ -3364,22 +4208,26 @@ msgid ""
 "if you’re running a `git log` command and can’t remember one of the options, "
 "you can start typing it and press Tab to see what matches:"
 msgstr ""
+"옵션에도 이 기능이 되고 더 유용하다. 예를 들어 `git log`명령을 실행하는데 옵션이 전혀 기억나지 않는다면 다음과 같이 입력하고 "
+"Tap 키를 누르면 다음과 같은 옵션을 제안한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:1076
 msgid ""
 "\t$ git log --s<tab>\n"
 "\t--shortstat  --since=  --src-prefix=  --stat   --summary"
 msgstr ""
+"\t$ git log --s<tab>\n"
+"\t--shortstat  --since=  --src-prefix=  --stat   --summary"
 
 #: en/02-git-basics/01-chapter2.markdown:1079
 msgid ""
 "That’s a pretty nice trick and may save you some time and documentation "
 "reading."
-msgstr ""
+msgstr "이건 상당히 멋진 팁이다. 아마 문서를 찾아보는 등의 시간을 절약해 줄 것이다."
 
 #: en/02-git-basics/01-chapter2.markdown:1081
 msgid "### Git Aliases ###"
-msgstr ""
+msgstr "### Git Aliases ###"
 
 #: en/02-git-basics/01-chapter2.markdown:1083
 msgid ""
@@ -3388,6 +4236,8 @@ msgid ""
 "up an alias for each command using `git config`. Here are a couple of "
 "examples you may want to set up:"
 msgstr ""
+"명령을 완벽하게 입력하지 않으면 Git은 알아듣지 못한다. Git의 명령을 전부 입력하는 것이 귀찮다면 `git config`를 사용하여 "
+"각 명령의 Alias을 쉽게 만들 수 있다. 다음은 Alias을 만드는 예이다:"
 
 #: en/02-git-basics/01-chapter2.markdown:1085
 msgid ""
@@ -3396,6 +4246,10 @@ msgid ""
 "\t$ git config --global alias.ci commit\n"
 "\t$ git config --global alias.st status"
 msgstr ""
+"\t$ git config --global alias.co checkout\n"
+"\t$ git config --global alias.br branch\n"
+"\t$ git config --global alias.ci commit\n"
+"\t$ git config --global alias.st status"
 
 #: en/02-git-basics/01-chapter2.markdown:1090
 msgid ""
@@ -3403,6 +4257,8 @@ msgid ""
 "to type `git ci`. As you go on using Git, you’ll probably use other commands "
 "frequently as well; in this case, don’t hesitate to create new aliases."
 msgstr ""
+"이제 `git commit` 대신 `git ci`만으로도 커밋할 수 있다. Git을 계속 사용한다면 다른 명령어도 자주 사용하게 될 "
+"것이다. 자주 사용하는 명령은 Alias을 만들어 편하게 사용한다."
 
 #: en/02-git-basics/01-chapter2.markdown:1092
 msgid ""
@@ -3410,34 +4266,38 @@ msgid ""
 "should exist. For example, to correct the usability problem you encountered "
 "with unstaging a file, you can add your own unstage alias to Git:"
 msgstr ""
+"이미 있는 명령을 편리하고 새로운 명령으로 만들어 사용할 수 있다. 예를 들어 파일을 Unstage 상태로 변경하는 명령을 만들어서 "
+"불편함을 덜 수 있다. 다음과 같이 `unstage` 라는 Alias을 만든다:"
 
 #: en/02-git-basics/01-chapter2.markdown:1094
 msgid "\t$ git config --global alias.unstage 'reset HEAD --'"
-msgstr ""
+msgstr "\t$ git config --global alias.unstage 'reset HEAD --'"
 
 #: en/02-git-basics/01-chapter2.markdown:1096
 msgid "This makes the following two commands equivalent:"
-msgstr ""
+msgstr "다음 두 명령은 동일하게 동작한다:"
 
 #: en/02-git-basics/01-chapter2.markdown:1098
 msgid ""
 "\t$ git unstage fileA\n"
 "\t$ git reset HEAD fileA"
 msgstr ""
+"\t$ git unstage fileA\n"
+"\t$ git reset HEAD fileA"
 
 #: en/02-git-basics/01-chapter2.markdown:1101
 msgid ""
 "This seems a bit clearer. It’s also common to add a `last` command, like "
 "this:"
-msgstr ""
+msgstr "한결 간결해졌다. 추가로 `last` 명령을 만들어 보자:"
 
 #: en/02-git-basics/01-chapter2.markdown:1103
 msgid "\t$ git config --global alias.last 'log -1 HEAD'"
-msgstr ""
+msgstr "\t$ git config --global alias.last 'log -1 HEAD'"
 
 #: en/02-git-basics/01-chapter2.markdown:1105
 msgid "This way, you can see the last commit easily:"
-msgstr ""
+msgstr "이제 최근 커밋을 좀 더 쉽게 확인할 수 있다:"
 
 #: en/02-git-basics/01-chapter2.markdown:1107
 msgid ""
@@ -3446,14 +4306,18 @@ msgid ""
 "\tAuthor: Josh Goebel <dreamer3@example.com>\n"
 "\tDate:   Tue Aug 26 19:48:51 2008 +0800"
 msgstr ""
+"\t$ git last\n"
+"\tcommit 66938dae3329c7aebe598c2246a8e6af90d04646\n"
+"\tAuthor: Josh Goebel <dreamer3@example.com>\n"
+"\tDate:   Tue Aug 26 19:48:51 2008 +0800"
 
 #: en/02-git-basics/01-chapter2.markdown:1112
 msgid "\t    test for current head"
-msgstr ""
+msgstr "\t    test for current head"
 
 #: en/02-git-basics/01-chapter2.markdown:1114
 msgid "\t    Signed-off-by: Scott Chacon <schacon@example.com>"
-msgstr ""
+msgstr "\t    Signed-off-by: Scott Chacon <schacon@example.com>"
 
 #: en/02-git-basics/01-chapter2.markdown:1116
 msgid ""
@@ -3463,10 +4327,12 @@ msgid ""
 "is useful if you write your own tools that work with a Git repository. We "
 "can demonstrate by aliasing `git visual` to run `gitk`:"
 msgstr ""
+"이것으로 쉽게 새로운 명령을 만들 수 있다. 그리고 Git의 명령어뿐만 아니라 외부 명령어도 실행할 수 있다. `!`를 제일 앞에 "
+"추가하면 외부 명령을 실행한다. 다음은 `git visual`이라고 입력하면 `gitk`가 실행된다:"
 
 #: en/02-git-basics/01-chapter2.markdown:1118
 msgid "\t$ git config --global alias.visual '!gitk'"
-msgstr ""
+msgstr "\t$ git config --global alias.visual '!gitk'"
 
 #: en/02-git-basics/01-chapter2.markdown:1122
 msgid ""
@@ -3475,6 +4341,9 @@ msgid ""
 "and viewing the history of all the changes the repository has been through. "
 "Next, we’ll cover Git’s killer feature: its branching model."
 msgstr ""
+"이제 우리는 로컬에서 사용할 수 있는 Git 명령에 대한 기본 지식은 갖추었다. 저장소를 만들고 Clone하는 방법, 수정하고 나서 "
+"Stage하고 커밋하는 방법, 저장소의 히스토리를 조회하는 방법 등을 살펴보았다. 이어지는 장에서는 Git의 가장 강력한 기능인 브랜치 "
+"모델을 살펴볼 것이다."
 
 #: en/03-git-branching/01-chapter3.markdown:1
 msgid "# Git Branching #"
@@ -4201,6 +5070,7 @@ msgid ""
 msgstr ""
 
 #: en/03-git-branching/01-chapter3.markdown:277
+#, fuzzy
 msgid ""
 "\t$ git status\n"
 "\t# On branch master\n"
@@ -4210,6 +5080,13 @@ msgid ""
 "\t#\tmodified:   index.html\n"
 "\t#"
 msgstr ""
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#\tnew file:   README\n"
+"\t#"
 
 #: en/03-git-branching/01-chapter3.markdown:285
 msgid ""
@@ -4606,6 +5483,7 @@ msgid ""
 msgstr ""
 
 #: en/03-git-branching/01-chapter3.markdown:417
+#, fuzzy
 msgid ""
 "\t$ git push origin serverfix\n"
 "\tCounting objects: 20, done.\n"
@@ -4615,6 +5493,13 @@ msgid ""
 "\tTo git@github.com:schacon/simplegit.git\n"
 "\t * [new branch]      serverfix -> serverfix"
 msgstr ""
+"\t$ git push origin v1.5\n"
+"\tCounting objects: 50, done.\n"
+"\tCompressing objects: 100% (38/38), done.\n"
+"\tWriting objects: 100% (44/44), 4.56 KiB, done.\n"
+"\tTotal 44 (delta 18), reused 8 (delta 1)\n"
+"\tTo git@github.com:schacon/simplegit.git\n"
+"\t* [new tag]         v1.5 -> v1.5"
 
 #: en/03-git-branching/01-chapter3.markdown:425
 msgid ""
@@ -7224,8 +8109,9 @@ msgid "Next you can create a new repository."
 msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:760
+#, fuzzy
 msgid "### Creating a New Repository ###"
-msgstr ""
+msgstr "## Git 저장소 만들기 ##"
 
 #: en/04-git-server/01-chapter4.markdown:762
 msgid ""
@@ -8568,10 +9454,13 @@ msgid ""
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:425
+#, fuzzy
 msgid ""
 "\t lib/simplegit.rb |   10 +++++++++-\n"
 "\t 1 files changed, 9 insertions(+), 1 deletions(-)"
 msgstr ""
+"\t lib/simplegit.rb |    5 -----\n"
+"\t 1 files changed, 0 insertions(+), 5 deletions(-)"
 
 #: en/05-distributed-git/01-chapter5.markdown:428
 msgid ""
@@ -8763,13 +9652,17 @@ msgid "\tLimit log functionality to the first 20"
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:500
+#, fuzzy
 msgid ""
 "\t---\n"
 "\t lib/simplegit.rb |    2 +-\n"
 "\t 1 files changed, 1 insertions(+), 1 deletions(-)"
 msgstr ""
+"\t lib/simplegit.rb |    5 -----\n"
+"\t 1 files changed, 0 insertions(+), 5 deletions(-)"
 
 #: en/05-distributed-git/01-chapter5.markdown:504
+#, fuzzy
 msgid ""
 "\tdiff --git a/lib/simplegit.rb b/lib/simplegit.rb\n"
 "\tindex 76f47bc..f9815f1 100644\n"
@@ -8778,6 +9671,12 @@ msgid ""
 "\t@@ -14,7 +14,7 @@ class SimpleGit\n"
 "\t   end"
 msgstr ""
+"\tdiff --git a/lib/simplegit.rb b/lib/simplegit.rb\n"
+"\tindex a0a60ae..47c6340 100644\n"
+"\t--- a/lib/simplegit.rb\n"
+"\t+++ b/lib/simplegit.rb\n"
+"\t@@ -18,8 +18,3 @@ class SimpleGit\n"
+"\t     end"
 
 #: en/05-distributed-git/01-chapter5.markdown:511
 msgid ""
@@ -9617,12 +10516,17 @@ msgid ""
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:820
+#, fuzzy
 msgid ""
 "\t$ git tag -s v1.5 -m 'my signed 1.5 tag'\n"
 "\tYou need a passphrase to unlock the secret key for\n"
 "\tuser: \"Scott Chacon <schacon@gmail.com>\"\n"
 "\t1024-bit DSA key, ID F721C45A, created 2009-02-09"
 msgstr ""
+"\t$ git tag -s v1.5 -m 'my signed 1.5 tag'\n"
+"\tYou need a passphrase to unlock the secret key for\n"
+"\tuser: \"Scott Chacon <schacon@gee-mail.com>\"\n"
+"\t1024-bit DSA key, ID F721C45A, created 2009-02-09"
 
 #: en/05-distributed-git/01-chapter5.markdown:825
 msgid ""
@@ -10652,6 +11556,7 @@ msgid ""
 msgstr ""
 
 #: en/06-git-tools/01-chapter6.markdown:364
+#, fuzzy
 msgid ""
 "\tdiff --git a/lib/simplegit.rb b/lib/simplegit.rb\n"
 "\tindex dd5ecc4..57399e0 100644\n"
@@ -10660,6 +11565,12 @@ msgid ""
 "\t@@ -22,7 +22,7 @@ class SimpleGit\n"
 "\t   end"
 msgstr ""
+"\tdiff --git a/lib/simplegit.rb b/lib/simplegit.rb\n"
+"\tindex a0a60ae..47c6340 100644\n"
+"\t--- a/lib/simplegit.rb\n"
+"\t+++ b/lib/simplegit.rb\n"
+"\t@@ -18,8 +18,3 @@ class SimpleGit\n"
+"\t     end"
 
 #: en/06-git-tools/01-chapter6.markdown:371
 msgid ""
@@ -10763,6 +11674,7 @@ msgid ""
 msgstr ""
 
 #: en/06-git-tools/01-chapter6.markdown:418
+#, fuzzy
 msgid ""
 "\t$ git status\n"
 "\t# On branch master\n"
@@ -10777,6 +11689,18 @@ msgid ""
 "\t#      modified:   lib/simplegit.rb\n"
 "\t#"
 msgstr ""
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#\tnew file:   README\n"
+"\t#\n"
+"\t# Changes not staged for commit:\n"
+"\t#   (use \"git add <file>...\" to update what will be committed)\n"
+"\t#\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#"
 
 #: en/06-git-tools/01-chapter6.markdown:431
 msgid ""
@@ -10858,6 +11782,7 @@ msgid ""
 msgstr ""
 
 #: en/06-git-tools/01-chapter6.markdown:467
+#, fuzzy
 msgid ""
 "\t$ git stash apply --index\n"
 "\t# On branch master\n"
@@ -10872,6 +11797,18 @@ msgid ""
 "\t#      modified:   lib/simplegit.rb\n"
 "\t#"
 msgstr ""
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#\tnew file:   README\n"
+"\t#\n"
+"\t# Changes not staged for commit:\n"
+"\t#   (use \"git add <file>...\" to update what will be committed)\n"
+"\t#\n"
+"\t#\tmodified:   benchmarks.rb\n"
+"\t#"
 
 #: en/06-git-tools/01-chapter6.markdown:480
 msgid ""
@@ -11002,8 +11939,9 @@ msgid ""
 msgstr ""
 
 #: en/06-git-tools/01-chapter6.markdown:535
+#, fuzzy
 msgid "### Changing the Last Commit ###"
-msgstr ""
+msgstr "### 커밋 수정하기 ###"
 
 #: en/06-git-tools/01-chapter6.markdown:537
 msgid ""
@@ -11018,9 +11956,10 @@ msgid "If you only want to modify your last commit message, it’s very simple:"
 msgstr ""
 
 #: en/06-git-tools/01-chapter6.markdown:541
+#, fuzzy
 msgctxt "en/06-git-tools/01-chapter6.markdown:541"
 msgid "\t$ git commit --amend"
-msgstr ""
+msgstr "\t$ git commit --amend"
 
 #: en/06-git-tools/01-chapter6.markdown:543
 msgid ""
@@ -11169,8 +12108,9 @@ msgid ""
 msgstr ""
 
 #: en/06-git-tools/01-chapter6.markdown:597
+#, fuzzy
 msgid "\t       git commit --amend"
-msgstr ""
+msgstr "\t$ git commit --amend"
 
 #: en/06-git-tools/01-chapter6.markdown:599
 msgid "\tOnce you’re satisfied with your changes, run"
@@ -11185,9 +12125,10 @@ msgid "These instructions tell you exactly what to do. Type"
 msgstr ""
 
 #: en/06-git-tools/01-chapter6.markdown:605
+#, fuzzy
 msgctxt "en/06-git-tools/01-chapter6.markdown:605"
 msgid "\t$ git commit --amend"
-msgstr ""
+msgstr "\t$ git commit --amend"
 
 #: en/06-git-tools/01-chapter6.markdown:607
 msgid "Change the commit message, and exit the editor. Then, run"
@@ -11808,6 +12749,7 @@ msgid ""
 msgstr ""
 
 #: en/06-git-tools/01-chapter6.markdown:845
+#, fuzzy
 msgid ""
 "\t$ git status\n"
 "\t# On branch master\n"
@@ -11818,6 +12760,13 @@ msgid ""
 "\t#      new file:   rack\n"
 "\t#"
 msgstr ""
+"\t$ git status\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#\tnew file:   README\n"
+"\t#"
 
 #: en/06-git-tools/01-chapter6.markdown:854
 msgid ""
@@ -12578,6 +13527,7 @@ msgid "\twhat happened"
 msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:57
+#, fuzzy
 msgid ""
 "\t[ticket: X]\n"
 "\t# Please enter the commit message for your changes. Lines starting\n"
@@ -12592,6 +13542,18 @@ msgid ""
 "\t~\n"
 "\t\".git/COMMIT_EDITMSG\" 14L, 297C"
 msgstr ""
+"\t# Please enter the commit message for your changes. Lines starting\n"
+"\t# with '#' will be ignored, and an empty message aborts the commit.\n"
+"\t# On branch master\n"
+"\t# Changes to be committed:\n"
+"\t#   (use \"git reset HEAD <file>...\" to unstage)\n"
+"\t#\n"
+"\t#       new file:   README\n"
+"\t#       modified:   benchmarks.rb\n"
+"\t~\n"
+"\t~\n"
+"\t~\n"
+"\t\".git/COMMIT_EDITMSG\" 10L, 283C"
 
 #: en/07-customizing-git/01-chapter7.markdown:70
 msgid ""
@@ -12713,8 +13675,9 @@ msgid ""
 msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:114
+#, fuzzy
 msgid "\t$ git config --global color.ui true"
-msgstr ""
+msgstr "\t$ git config --global core.editor emacs"
 
 #: en/07-customizing-git/01-chapter7.markdown:116
 msgid ""
@@ -14204,8 +15167,9 @@ msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:647
 #: en/09-git-internals/01-chapter9.markdown:649
+#, fuzzy
 msgid "\tchanged the version number"
-msgstr ""
+msgstr "\t    changed the version number"
 
 #: en/07-customizing-git/01-chapter7.markdown:649
 msgid ""
@@ -15525,8 +16489,9 @@ msgid ""
 msgstr ""
 
 #: en/08-git-and-other-scms/01-chapter8.markdown:280
+#, fuzzy
 msgid "\tMerge branch 'experiment'"
-msgstr ""
+msgstr "\t    Merge branch 'experiment'"
 
 #: en/08-git-and-other-scms/01-chapter8.markdown:282
 msgid ""
@@ -16939,8 +17904,9 @@ msgid ""
 msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:186
+#, fuzzy
 msgid "\tfirst commit"
-msgstr ""
+msgstr "\t    first commit"
 
 #: en/09-git-internals/01-chapter9.markdown:188
 msgid ""
@@ -16981,15 +17947,19 @@ msgid ""
 msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:204
+#, fuzzy
 msgctxt "en/09-git-internals/01-chapter9.markdown:204"
 msgid "\t    third commit"
-msgstr ""
+msgstr "\t    first commit"
 
 #: en/09-git-internals/01-chapter9.markdown:206
+#, fuzzy
 msgid ""
 "\t bak/test.txt |    1 +\n"
 "\t 1 files changed, 1 insertions(+), 0 deletions(-)"
 msgstr ""
+"\t Rakefile |    2 +-\n"
+"\t 1 files changed, 1 insertions(+), 1 deletions(-)"
 
 #: en/09-git-internals/01-chapter9.markdown:209
 msgid ""
@@ -17017,14 +17987,18 @@ msgid ""
 msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:223
+#, fuzzy
 msgid "\t    first commit"
-msgstr ""
+msgstr "\t    first commit"
 
 #: en/09-git-internals/01-chapter9.markdown:225
+#, fuzzy
 msgid ""
 "\t test.txt |    1 +\n"
 "\t 1 files changed, 1 insertions(+), 0 deletions(-)"
 msgstr ""
+"\t Rakefile |    2 +-\n"
+"\t 1 files changed, 1 insertions(+), 1 deletions(-)"
 
 #: en/09-git-internals/01-chapter9.markdown:228
 msgid ""
@@ -17904,8 +18878,9 @@ msgid ""
 msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:611
+#, fuzzy
 msgid "\t$ git push origin :topic"
-msgstr ""
+msgstr "\t$ git push origin master"
 
 #: en/09-git-internals/01-chapter9.markdown:613
 msgid ""
@@ -17940,8 +18915,9 @@ msgid ""
 msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:623
+#, fuzzy
 msgid "\t$ git clone http://github.com/schacon/simplegit-progit.git"
-msgstr ""
+msgstr "\tgit clone git://github.com/schacon/simplegit-progit.git"
 
 #: en/09-git-internals/01-chapter9.markdown:625
 msgid ""
@@ -18489,9 +19465,10 @@ msgid ""
 msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:837
+#, fuzzy
 msgctxt "en/09-git-internals/01-chapter9.markdown:837"
 msgid "\t    third commit"
-msgstr ""
+msgstr "\t    first commit"
 
 #: en/09-git-internals/01-chapter9.markdown:839
 msgid ""
@@ -18564,8 +19541,9 @@ msgid ""
 msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:873
+#, fuzzy
 msgid "### Removing Objects ###"
-msgstr ""
+msgstr "### 파일을 삭제하기 ###"
 
 #: en/09-git-internals/01-chapter9.markdown:875
 msgid ""
