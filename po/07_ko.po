@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-02 21:08+0900\n"
+"POT-Creation-Date: 2013-01-03 12:06+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,14 +58,14 @@ msgid ""
 "looks for these values is in an `/etc/gitconfig` file, which contains values "
 "for every user on the system and all of their repositories. If you pass the "
 "option `--system` to `git config`, it reads and writes from this file "
-"specifically. "
+"specifically."
 msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:16
 msgid ""
 "The next place Git looks is the `~/.gitconfig` file, which is specific to "
 "each user. You can make Git read and write to this file by passing the "
-"`--global` option. "
+"`--global` option."
 msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:18
@@ -364,7 +364,7 @@ msgid ""
 msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:131
-msgid "\t$ git config --global color.diff.meta “blue black bold”"
+msgid "\t$ git config --global color.diff.meta \"blue black bold\""
 msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:133
@@ -445,7 +445,7 @@ msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:159
 msgid ""
-"\t$ cat /usr/local/bin/extDiff \n"
+"\t$ cat /usr/local/bin/extDiff\n"
 "\t#!/bin/sh\n"
 "\t[ $# -eq 7 ] && /usr/local/bin/extMerge \"$2\" \"$5\""
 msgstr ""
@@ -456,7 +456,7 @@ msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:165
 msgid ""
-"\t$ sudo chmod +x /usr/local/bin/extMerge \n"
+"\t$ sudo chmod +x /usr/local/bin/extMerge\n"
 "\t$ sudo chmod +x /usr/local/bin/extDiff"
 msgstr ""
 
@@ -511,7 +511,7 @@ msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:192
 msgid ""
-"Insert 18333fig0701.png \n"
+"Insert 18333fig0701.png\n"
 "Figure 7-1. P4Merge."
 msgstr ""
 
@@ -533,7 +533,7 @@ msgstr ""
 #: en/07-customizing-git/01-chapter7.markdown:199
 msgid ""
 "\t$ cat /usr/local/bin/extMerge\n"
-"\t#!/bin/sh\t\n"
+"\t#!/bin/sh\n"
 "\t/Applications/kdiff3.app/Contents/MacOS/kdiff3 $*"
 msgstr ""
 
@@ -590,7 +590,7 @@ msgid ""
 "issues at some point. This is because Windows uses both a carriage-return "
 "character and a linefeed character for newlines in its files, whereas Mac "
 "and Linux systems use only the linefeed character. This is a subtle but "
-"incredibly annoying fact of cross-platform work. "
+"incredibly annoying fact of cross-platform work."
 msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:219
@@ -904,7 +904,7 @@ msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:316
 msgid ""
-"\t$ git diff \n"
+"\t$ git diff\n"
 "\tdiff --git a/chapter1.doc b/chapter1.doc\n"
 "\tindex 88839c4..4afcb7c 100644\n"
 "\tBinary files a/chapter1.doc and b/chapter1.doc differ"
@@ -947,7 +947,7 @@ msgstr ""
 #: en/07-customizing-git/01-chapter7.markdown:334
 msgid ""
 "Side note: There are different kinds of `.doc` files. Some use an UTF-16 "
-"encoding or other \"codepages\" and `strings` won't find anything useful in "
+"encoding or other \"codepages\" and `strings` won’t find anything useful in "
 "there. Your mileage may vary."
 msgstr ""
 
@@ -979,9 +979,9 @@ msgid ""
 "don\n"
 "\t t already have it on your system.\n"
 "\t In Chapter Two we will go over basic Git usage - how to use Git for the 80"
-"% \n"
-"\t-s going on, modify stuff and contribute changes. If the book spontaneously "
-"\t+s going on, modify stuff and contribute changes. If the book spontaneously "
+"%\n"
+"\t-s going on, modify stuff and contribute changes. If the book spontaneously\n"
+"\t+s going on, modify stuff and contribute changes. If the book spontaneously\n"
 "\t+Let's see if this works."
 msgstr ""
 
@@ -1027,8 +1027,8 @@ msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:369
 msgid ""
-"OpenDocument files are actually zip'ped directories containing multiple "
-"files (the content in an XML format, stylesheets, images, etc.). We'll need "
+"OpenDocument files are actually zip’ped directories containing multiple "
+"files (the content in an XML format, stylesheets, images, etc.). We’ll need "
 "to write a script to extract the content and return it as plain text. Create "
 "a file `/usr/local/bin/odt-to-txt` (you are free to put it into a different "
 "directory) with the following content:"
@@ -1174,7 +1174,7 @@ msgstr ""
 msgid ""
 "\t$ rm test.txt\n"
 "\t$ git checkout -- test.txt\n"
-"\t$ cat test.txt \n"
+"\t$ cat test.txt\n"
 "\t$Id: 42812b7653c7b88933f8a9d6cad0ca16714b9bb3 $"
 msgstr ""
 
@@ -1198,13 +1198,13 @@ msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:456
 msgid ""
-"Insert 18333fig0702.png \n"
+"Insert 18333fig0702.png\n"
 "Figure 7-2. The “smudge” filter is run on checkout."
 msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:459
 msgid ""
-"Insert 18333fig0703.png \n"
+"Insert 18333fig0703.png\n"
 "Figure 7-3. The “clean” filter is run when files are staged."
 msgstr ""
 
@@ -1989,7 +1989,7 @@ msgid ""
 "\t      access[$user].each do |access_path|\n"
 "\t        if !access_path || # user has access to everything\n"
 "\t          (path.index(access_path) == 0) # access to this path\n"
-"\t          has_file_access = true \n"
+"\t          has_file_access = true\n"
 "\t        end\n"
 "\t      end\n"
 "\t      if !has_file_access\n"
@@ -1997,7 +1997,7 @@ msgid ""
 "\t        exit 1\n"
 "\t      end\n"
 "\t    end\n"
-"\t  end  \n"
+"\t  end\n"
 "\tend"
 msgstr ""
 
@@ -2014,7 +2014,7 @@ msgid ""
 "all the paths being modified. One Rubyism that may not be clear is "
 "`path.index(access_path) == 0`, which is true if path begins with "
 "`access_path` — this ensures that `access_path` is not just in one of the "
-"allowed paths, but an allowed path begins with each accessed path. "
+"allowed paths, but an allowed path begins with each accessed path."
 msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:754
@@ -2045,7 +2045,7 @@ msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:762
 msgid ""
-"\t# enforces fast-forward only pushes \n"
+"\t# enforces fast-forward only pushes\n"
 "\tdef check_fast_forward\n"
 "\t  missed_refs = `git rev-list #{$newrev}..#{$oldrev}`\n"
 "\t  missed_ref_count = missed_refs.split(\"\\n\").size\n"
@@ -2064,7 +2064,7 @@ msgstr ""
 msgid ""
 "Everything is set up. If you run `chmod u+x .git/hooks/update`, which is the "
 "file into which you should have put all this code, and then try to push a "
-"non-fast-forward reference, you'll get something like this:"
+"non-fast-forward reference, you’ll get something like this:"
 msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:776
@@ -2075,7 +2075,7 @@ msgid ""
 "\tWriting objects: 100% (3/3), 323 bytes, done.\n"
 "\tTotal 3 (delta 1), reused 0 (delta 0)\n"
 "\tUnpacking objects: 100% (3/3), done.\n"
-"\tEnforcing Policies... \n"
+"\tEnforcing Policies...\n"
 "\t(refs/heads/master) (8338c5) (c5b616)\n"
 "\t[POLICY] Cannot push a non fast-forward reference\n"
 "\terror: hooks/update exited with error code 1\n"
@@ -2093,7 +2093,7 @@ msgstr ""
 
 #: en/07-customizing-git/01-chapter7.markdown:793
 msgid ""
-"\tEnforcing Policies... \n"
+"\tEnforcing Policies...\n"
 "\t(refs/heads/master) (8338c5) (c5b616)"
 msgstr ""
 
@@ -2396,7 +2396,7 @@ msgid ""
 "\ttarget_shas.each do |sha|\n"
 "\t  remote_refs.each do |remote_ref|\n"
 "\t    shas_pushed = `git rev-list ^#{sha}^@ refs/remotes/#{remote_ref}`\n"
-"\t    if shas_pushed.split(“\\n”).include?(sha)\n"
+"\t    if shas_pushed.split(\"\\n\").include?(sha)\n"
 "\t      puts \"[POLICY] Commit #{sha} has already been pushed to "
 "#{remote_ref}\"\n"
 "\t      exit 1\n"
