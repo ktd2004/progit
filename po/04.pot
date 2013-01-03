@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-02 21:10+0900\n"
+"POT-Creation-Date: 2013-01-03 12:06+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -639,11 +639,11 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:180
 msgid ""
-"\t$ ssh-keygen \n"
+"\t$ ssh-keygen\n"
 "\tGenerating public/private rsa key pair.\n"
-"\tEnter file in which to save the key (/Users/schacon/.ssh/id_rsa): \n"
-"\tEnter passphrase (empty for no passphrase): \n"
-"\tEnter same passphrase again: \n"
+"\tEnter file in which to save the key (/Users/schacon/.ssh/id_rsa):\n"
+"\tEnter passphrase (empty for no passphrase):\n"
+"\tEnter same passphrase again:\n"
 "\tYour identification has been saved in /Users/schacon/.ssh/id_rsa.\n"
 "\tYour public key has been saved in /Users/schacon/.ssh/id_rsa.pub.\n"
 "\tThe key fingerprint is:\n"
@@ -667,7 +667,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:194
 msgid ""
-"\t$ cat ~/.ssh/id_rsa.pub \n"
+"\t$ cat ~/.ssh/id_rsa.pub\n"
 "\tssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU\n"
 "\tGPl+nafzlHDTYW7hdI4yZ5ew18JH4JW9jbhUFrviQzM7xlELEVf4h9lFX5QVkbPppSwg0cda3\n"
 "\tPbv7kOdJ/MTyBlWXFCR+HAo3FXRitBqxiX1nKhXpHAZsMciLq8V6RjsNAQwdsdMFvSlVK/7XA\n"
@@ -880,7 +880,7 @@ msgstr ""
 msgid ""
 "If you’re using a version of Git earlier than 1.6, the `mv` command isn’t "
 "necessary — Git started naming the hooks examples with the .sample postfix "
-"only recently. "
+"only recently."
 msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:288
@@ -889,7 +889,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:290
 msgid ""
-"\t$ cat .git/hooks/post-update \n"
+"\t$ cat .git/hooks/post-update\n"
 "\t#!/bin/sh\n"
 "\texec git-update-server-info"
 msgstr ""
@@ -965,7 +965,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:321
 msgid ""
-"Insert 18333fig0401.png \n"
+"Insert 18333fig0401.png\n"
 "Figure 4-1. The GitWeb web-based user interface."
 msgstr ""
 
@@ -1236,7 +1236,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:427
 msgid ""
-"\t$ cat gitosis.conf \n"
+"\t$ cat gitosis.conf\n"
 "\t[gitosis]"
 msgstr ""
 
@@ -1454,7 +1454,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:520
 msgid ""
-"Installing Gitolite is very easy, even if you don't read the extensive "
+"Installing Gitolite is very easy, even if you don’t read the extensive "
 "documentation that comes with it.  You need an account on a Unix server of "
 "some kind.  You do not need root access, assuming git, perl, and an openssh "
 "compatible ssh server are already installed.  In the examples below, we will "
@@ -1494,7 +1494,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:534
 msgid ""
-"And you're done!  Gitolite has now been installed on the server, and you now "
+"And you’re done!  Gitolite has now been installed on the server, and you now "
 "have a brand new repository called `gitolite-admin` in your workstation.  "
 "You administer your gitolite setup by making changes to this repository and "
 "pushing."
@@ -1508,7 +1508,7 @@ msgstr ""
 msgid ""
 "While the default, quick, install works for most people, there are some ways "
 "to customise the install if you need to.  Some changes can be made simply "
-"by editing the rc file, but if that is not sufficient, there's documentation "
+"by editing the rc file, but if that is not sufficient, there’s documentation "
 "on customising Gitolite."
 msgstr ""
 
@@ -1562,14 +1562,14 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:562
 msgid ""
-"The config file syntax for gitolite is well documented, so we'll only "
+"The config file syntax for gitolite is well documented, so we’ll only "
 "mention some highlights here."
 msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:564
 msgid ""
 "You can group users or repos for convenience.  The group names are just like "
-"macros; when defining them, it doesn't even matter whether they are "
+"macros; when defining them, it doesn’t even matter whether they are "
 "projects or users; that distinction is only made when you *use* the \"macro\"."
 msgstr ""
 
@@ -1608,8 +1608,8 @@ msgstr ""
 msgid ""
 "The expression after the `RW` or `RW+` is a regular expression (regex) that "
 "the refname (ref) being pushed is matched against.  So we call it a \"refex\"! "
-" Of course, a refex can be far more powerful than shown here, so don't "
-"overdo it if you're not comfortable with Perl regexes."
+" Of course, a refex can be far more powerful than shown here, so don’t "
+"overdo it if you’re not comfortable with Perl regexes."
 msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:584
@@ -1620,7 +1620,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:586
 msgid ""
-"An important feature of the config file's syntax is that all the rules for a "
+"An important feature of the config file’s syntax is that all the rules for a "
 "repository need not be in one place.  You can keep all the common stuff "
 "together, like the rules for all `oss_repos` shown above, then add specific "
 "rules for specific cases later on, like so:"
@@ -1640,7 +1640,7 @@ msgstr ""
 #: en/04-git-server/01-chapter4.markdown:593
 msgid ""
 "At this point you might be wondering how the access control rules are "
-"actually applied, so let's go over that briefly."
+"actually applied, so let’s go over that briefly."
 msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:595
@@ -1668,7 +1668,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:601
 msgid ""
-"So far, we've only seen permissions to be one of `R`, `RW`, or `RW+`.  "
+"So far, we’ve only seen permissions to be one of `R`, `RW`, or `RW+`.  "
 "However, Gitolite allows another permission: `-`, standing for \"deny\".  This "
 "gives you a lot more power, at the expense of some complexity, because now "
 "fallthrough is not the *only* way for access to be denied, so the *order of "
@@ -1678,7 +1678,7 @@ msgstr ""
 #: en/04-git-server/01-chapter4.markdown:603
 msgid ""
 "Let us say, in the situation above, we want engineers to be able to rewind "
-"any branch *except* master and integ.  Here's how to do that:"
+"any branch *except* master and integ.  Here’s how to do that:"
 msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:605
@@ -1694,7 +1694,7 @@ msgid ""
 "access mode, or a deny.  Non-rewind push to master or integ is allowed by "
 "the first rule.  A rewind push to those refs does not match the first rule, "
 "drops down to the second, and is therefore denied.  Any push (rewind or non-"
-"rewind) to refs other than master or integ won't match the first two rules "
+"rewind) to refs other than master or integ won’t match the first two rules "
 "anyway, and the third rule allows it."
 msgstr ""
 
@@ -1780,7 +1780,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:638
 msgid ""
-"We'll round off this discussion with a sampling of other features, all of "
+"We’ll round off this discussion with a sampling of other features, all of "
 "which, and many more, are described in great detail in the documentation."
 msgstr ""
 
@@ -1796,7 +1796,7 @@ msgstr ""
 msgid ""
 "**Access rights reporting**: Another convenient feature is what happens when "
 "you try and just ssh to the server.  Gitolite shows you what repos you have "
-"access to, and what that access may be.  Here's an example:"
+"access to, and what that access may be.  Here’s an example:"
 msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:644
@@ -2033,7 +2033,7 @@ msgid ""
 "Because we can’t cover all of them, and because I happen to work at one of "
 "them, we’ll use this section to walk through setting up an account and "
 "creating a new project at GitHub. This will give you an idea of what is "
-"involved. "
+"involved."
 msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:732
@@ -2094,7 +2094,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:749
 msgid ""
-"Insert 18333fig0403.png \n"
+"Insert 18333fig0403.png\n"
 "Figure 4-3. The GitHub user signup form."
 msgstr ""
 
@@ -2111,12 +2111,12 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:755
 msgid ""
-"Insert 18333fig0404.png \n"
+"Insert 18333fig0404.png\n"
 "Figure 4-4. The GitHub user dashboard."
 msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:758
-msgid "Next you can create a new repository. "
+msgid "Next you can create a new repository."
 msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:760
@@ -2132,7 +2132,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:764
 msgid ""
-"Insert 18333fig0405.png \n"
+"Insert 18333fig0405.png\n"
 "Figure 4-5. Creating a new repository on GitHub."
 msgstr ""
 
@@ -2145,7 +2145,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:769
 msgid ""
-"Insert 18333fig0406.png \n"
+"Insert 18333fig0406.png\n"
 "Figure 4-6. GitHub project header information."
 msgstr ""
 
@@ -2158,7 +2158,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:774
 msgid ""
-"Insert 18333fig0407.png \n"
+"Insert 18333fig0407.png\n"
 "Figure 4-7. Instructions for a new repository."
 msgstr ""
 
@@ -2198,7 +2198,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:790
 msgid ""
-"Insert 18333fig0408.png \n"
+"Insert 18333fig0408.png\n"
 "Figure 4-8. Project header with a public URL and a private URL."
 msgstr ""
 
@@ -2232,7 +2232,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:801
 msgid ""
-"Insert 18333fig0409.png \n"
+"Insert 18333fig0409.png\n"
 "Figure 4-9. Subversion importing interface."
 msgstr ""
 
@@ -2264,7 +2264,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:812
 msgid ""
-"Insert 18333fig0410.png \n"
+"Insert 18333fig0410.png\n"
 "Figure 4-10. GitHub administration page."
 msgstr ""
 
@@ -2279,7 +2279,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:817
 msgid ""
-"Insert 18333fig0411.png \n"
+"Insert 18333fig0411.png\n"
 "Figure 4-11. Adding a collaborator to your project."
 msgstr ""
 
@@ -2291,7 +2291,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:822
 msgid ""
-"Insert 18333fig0412.png \n"
+"Insert 18333fig0412.png\n"
 "Figure 4-12. A list of collaborators on your project."
 msgstr ""
 
@@ -2315,7 +2315,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:831
 msgid ""
-"Insert 18333fig0413.png \n"
+"Insert 18333fig0413.png\n"
 "Figure 4-13. A GitHub main project page."
 msgstr ""
 
@@ -2364,7 +2364,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:844
 msgid ""
-"Insert 18333fig0414.png \n"
+"Insert 18333fig0414.png\n"
 "Figure 4-14. Get a writable copy of any repository by clicking the \"fork\" "
 "button."
 msgstr ""
@@ -2377,7 +2377,7 @@ msgstr ""
 
 #: en/04-git-server/01-chapter4.markdown:849
 msgid ""
-"Insert 18333fig0415.png \n"
+"Insert 18333fig0415.png\n"
 "Figure 4-15. Your fork of a project."
 msgstr ""
 

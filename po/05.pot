@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-02 21:10+0900\n"
+"POT-Creation-Date: 2013-01-03 12:06+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:15
 msgid ""
-"Insert 18333fig0501.png \n"
+"Insert 18333fig0501.png\n"
 "Figure 5-1. Centralized workflow."
 msgstr ""
 
@@ -115,19 +115,19 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:27
 msgid ""
-"1.\tThe project maintainer pushes to their public repository.\n"
-"2.\tA contributor clones that repository and makes changes.\n"
-"3.\tThe contributor pushes to their own public copy.\n"
-"4.\tThe contributor sends the maintainer an e-mail asking them to pull "
+"1. The project maintainer pushes to their public repository.\n"
+"2. A contributor clones that repository and makes changes.\n"
+"3. The contributor pushes to their own public copy.\n"
+"4. The contributor sends the maintainer an e-mail asking them to pull "
 "changes.\n"
-"5.\tThe maintainer adds the contributor’s repo as a remote and merges "
+"5. The maintainer adds the contributor’s repo as a remote and merges "
 "locally.\n"
-"6.\tThe maintainer pushes merged changes to the main repository."
+"6. The maintainer pushes merged changes to the main repository."
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:34
 msgid ""
-"Insert 18333fig0502.png \n"
+"Insert 18333fig0502.png\n"
 "Figure 5-2. Integration-manager workflow."
 msgstr ""
 
@@ -158,19 +158,19 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:43
 msgid ""
-"1.\tRegular developers work on their topic branch and rebase their work on "
+"1. Regular developers work on their topic branch and rebase their work on "
 "top of master. The master branch is that of the dictator.\n"
-"2.\tLieutenants merge the developers’ topic branches into their master "
+"2. Lieutenants merge the developers’ topic branches into their master "
 "branch.\n"
-"3.\tThe dictator merges the lieutenants’ master branches into the dictator’s "
+"3. The dictator merges the lieutenants’ master branches into the dictator’s "
 "master branch.\n"
-"4.\tThe dictator pushes their master to the reference repository so the other "
+"4. The dictator pushes their master to the reference repository so the other "
 "developers can rebase on it."
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:48
 msgid ""
-"Insert 18333fig0503.png  \n"
+"Insert 18333fig0503.png\n"
 "Figure 5-3. Benevolent dictator workflow."
 msgstr ""
 
@@ -404,7 +404,7 @@ msgid ""
 "\tInitialized empty Git repository in /home/john/simplegit/.git/\n"
 "\t...\n"
 "\t$ cd simplegit/\n"
-"\t$ vim lib/simplegit.rb \n"
+"\t$ vim lib/simplegit.rb\n"
 "\t$ git commit -am 'removed invalid default value'\n"
 "\t[master 738ee87] removed invalid default value\n"
 "\t 1 files changed, 1 insertions(+), 1 deletions(-)"
@@ -423,7 +423,7 @@ msgid ""
 "\tInitialized empty Git repository in /home/jessica/simplegit/.git/\n"
 "\t...\n"
 "\t$ cd simplegit/\n"
-"\t$ vim TODO \n"
+"\t$ vim TODO\n"
 "\t$ git commit -am 'add reset task'\n"
 "\t[master fbff5bc] add reset task\n"
 "\t 1 files changed, 1 insertions(+), 0 deletions(-)"
@@ -479,7 +479,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:164
 msgid ""
-"Insert 18333fig0504.png \n"
+"Insert 18333fig0504.png\n"
 "Figure 5-4. John’s initial repository."
 msgstr ""
 
@@ -504,7 +504,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:176
 msgid ""
-"Insert 18333fig0505.png \n"
+"Insert 18333fig0505.png\n"
 "Figure 5-5. John’s repository after merging origin/master."
 msgstr ""
 
@@ -528,7 +528,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:188
 msgid ""
-"Insert 18333fig0506.png \n"
+"Insert 18333fig0506.png\n"
 "Figure 5-6. John’s history after pushing to the origin server."
 msgstr ""
 
@@ -542,7 +542,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:193
 msgid ""
-"Insert 18333fig0507.png \n"
+"Insert 18333fig0507.png\n"
 "Figure 5-7. Jessica’s initial commit history."
 msgstr ""
 
@@ -567,7 +567,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:206
 msgid ""
-"Insert 18333fig0508.png \n"
+"Insert 18333fig0508.png\n"
 "Figure 5-8. Jessica’s history after fetching John’s changes."
 msgstr ""
 
@@ -645,7 +645,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:243
 msgid ""
-"Insert 18333fig0509.png \n"
+"Insert 18333fig0509.png\n"
 "Figure 5-9. Jessica’s history after merging John’s changes."
 msgstr ""
 
@@ -672,7 +672,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:255
 msgid ""
-"Insert 18333fig0510.png \n"
+"Insert 18333fig0510.png\n"
 "Figure 5-10. Jessica’s history after pushing all changes back to the server."
 msgstr ""
 
@@ -688,7 +688,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:260
 msgid ""
-"Insert 18333fig0511.png \n"
+"Insert 18333fig0511.png\n"
 "Figure 5-11. General sequence of events for a simple multiple-developer Git "
 "workflow."
 msgstr ""
@@ -791,7 +791,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:306
 msgid ""
-"Insert 18333fig0512.png \n"
+"Insert 18333fig0512.png\n"
 "Figure 5-12. Jessica’s initial commit history."
 msgstr ""
 
@@ -916,7 +916,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:371
 msgid ""
-"Insert 18333fig0513.png \n"
+"Insert 18333fig0513.png\n"
 "Figure 5-13. Jessica’s history after committing on a feature branch."
 msgstr ""
 
@@ -931,7 +931,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:376
 msgid ""
-"Insert 18333fig0514.png \n"
+"Insert 18333fig0514.png\n"
 "Figure 5-14. Jessica’s history after merging both her topic branches."
 msgstr ""
 
@@ -947,7 +947,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:381
 msgid ""
-"Insert 18333fig0515.png \n"
+"Insert 18333fig0515.png\n"
 "Figure 5-15. Basic sequence of this managed-team workflow."
 msgstr ""
 
@@ -1105,7 +1105,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:441
 msgid ""
-"Insert 18333fig0516.png \n"
+"Insert 18333fig0516.png\n"
 "Figure 5-16. Initial commit history with featureB work."
 msgstr ""
 
@@ -1130,7 +1130,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:452
 msgid ""
-"Insert 18333fig0517.png \n"
+"Insert 18333fig0517.png\n"
 "Figure 5-17. Commit history after featureA work."
 msgstr ""
 
@@ -1181,7 +1181,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:469
 msgid ""
-"Insert 18333fig0518.png \n"
+"Insert 18333fig0518.png\n"
 "Figure 5-18. Commit history after featureBv2 work."
 msgstr ""
 
@@ -1243,7 +1243,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:492
 msgid ""
-"\t$ cat 0001-add-limit-to-log-function.patch \n"
+"\t$ cat 0001-add-limit-to-log-function.patch\n"
 "\tFrom 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001\n"
 "\tFrom: Jessica Smith <jessica@example.com>\n"
 "\tDate: Sun, 6 Apr 2008 10:17:23 -0700\n"
@@ -1283,7 +1283,7 @@ msgstr ""
 #: en/05-distributed-git/01-chapter5.markdown:516
 msgid ""
 "\t   def ls_tree(treeish = 'master')\n"
-"\t-- \n"
+"\t--\n"
 "\t1.6.2.rc1.20.g8c5b.dirty"
 msgstr ""
 
@@ -1341,7 +1341,7 @@ msgid ""
 "\t0001-added-limit-to-log-function.patch\n"
 "\t0002-changed-log-output-to-30-from-25.patch\n"
 "\tWho should the emails appear to be from? [Jessica Smith "
-"<jessica@example.com>] \n"
+"<jessica@example.com>]\n"
 "\tEmails will be sent from: Jessica Smith <jessica@example.com>\n"
 "\tWho should the emails be sent to? jessica@example.com\n"
 "\tMessage-ID to be used as In-Reply-To for the first email? y"
@@ -1355,7 +1355,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:547
 msgid ""
-"\t(mbox) Adding cc: Jessica Smith <jessica@example.com> from \n"
+"\t(mbox) Adding cc: Jessica Smith <jessica@example.com> from\n"
 "\t  \\line 'From: Jessica Smith <jessica@example.com>'\n"
 "\tOK. Log says:\n"
 "\tSendmail: /usr/sbin/sendmail -i jessica@example.com\n"
@@ -1425,7 +1425,7 @@ msgid ""
 "easily remember it if you have to abandon it for a while and come back "
 "later. The maintainer of the Git project tends to namespace these branches "
 "as well — such as `sc/ruby_client`, where `sc` is short for the person who "
-"contributed the work. \n"
+"contributed the work.\n"
 "As you’ll remember, you can create the branch based off your master branch "
 "like this:"
 msgstr ""
@@ -1500,7 +1500,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:599
 msgid ""
-"\t$ git apply --check 0001-seeing-if-this-helps-the-gem.patch \n"
+"\t$ git apply --check 0001-seeing-if-this-helps-the-gem.patch\n"
 "\terror: patch failed: ticgit.gemspec:1\n"
 "\terror: ticgit.gemspec: patch does not apply"
 msgstr ""
@@ -1555,7 +1555,7 @@ msgid ""
 "download that into an mbox format, then you can point git am to that mbox "
 "file, and it will start applying all the patches it sees. If you run a mail "
 "client that can save several e-mails out in mbox format, you can save entire "
-"patch series into a file and then use git am to apply them one at a time. "
+"patch series into a file and then use git am to apply them one at a time."
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:620
@@ -1567,7 +1567,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:622
 msgid ""
-"\t$ git am 0001-limit-log-function.patch \n"
+"\t$ git am 0001-limit-log-function.patch\n"
 "\tApplying: add limit to log function"
 msgstr ""
 
@@ -1603,7 +1603,7 @@ msgstr ""
 msgid ""
 "The `Commit` information indicates the person who applied the patch and the "
 "time it was applied. The `Author` information is the individual who "
-"originally created the patch and when it was originally created. "
+"originally created the patch and when it was originally created."
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:640
@@ -1616,7 +1616,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:642
 msgid ""
-"\t$ git am 0001-seeing-if-this-helps-the-gem.patch \n"
+"\t$ git am 0001-seeing-if-this-helps-the-gem.patch\n"
 "\tApplying: seeing if this helps the gem\n"
 "\terror: patch failed: ticgit.gemspec:1\n"
 "\terror: ticgit.gemspec: patch does not apply\n"
@@ -1637,7 +1637,7 @@ msgstr ""
 #: en/05-distributed-git/01-chapter5.markdown:653
 msgid ""
 "\t$ (fix the file)\n"
-"\t$ git add ticgit.gemspec \n"
+"\t$ git add ticgit.gemspec\n"
 "\t$ git am --resolved\n"
 "\tApplying: seeing if this helps the gem"
 msgstr ""
@@ -1654,7 +1654,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:660
 msgid ""
-"\t$ git am -3 0001-seeing-if-this-helps-the-gem.patch \n"
+"\t$ git am -3 0001-seeing-if-this-helps-the-gem.patch\n"
 "\tApplying: seeing if this helps the gem\n"
 "\terror: patch failed: ticgit.gemspec:1\n"
 "\terror: ticgit.gemspec: patch does not apply\n"
@@ -1683,7 +1683,7 @@ msgid ""
 "\t--------------------------\n"
 "\tseeing if this helps the gem\n"
 "\t--------------------------\n"
-"\tApply? [y]es/[n]o/[e]dit/[v]iew patch/[a]ccept all "
+"\tApply? [y]es/[n]o/[e]dit/[v]iew patch/[a]ccept all"
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:679
@@ -1869,7 +1869,7 @@ msgstr ""
 msgid ""
 "\t$ git merge-base contrib master\n"
 "\t36c7dba2c95e6bbb78dfa822519ecfec6e1ca649\n"
-"\t$ git diff 36c7db "
+"\t$ git diff 36c7db"
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:743
@@ -1922,7 +1922,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:757
 msgid ""
-"Insert 18333fig0519.png \n"
+"Insert 18333fig0519.png\n"
 "Figure 5-19. History with several topic branches."
 msgstr ""
 
@@ -1953,19 +1953,19 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:767
 msgid ""
-"Insert 18333fig0521.png \n"
+"Insert 18333fig0521.png\n"
 "Figure 5-21. Before a topic branch merge."
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:770
 msgid ""
-"Insert 18333fig0522.png \n"
+"Insert 18333fig0522.png\n"
 "Figure 5-22. After a topic branch merge."
 msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:773
 msgid ""
-"Insert 18333fig0523.png \n"
+"Insert 18333fig0523.png\n"
 "Figure 5-23. After a topic branch release."
 msgstr ""
 
@@ -1998,7 +1998,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:783
 msgid ""
-"Insert 18333fig0524.png \n"
+"Insert 18333fig0524.png\n"
 "Figure 5-24. Managing a complex series of parallel contributed topic "
 "branches."
 msgstr ""
@@ -2015,7 +2015,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:788
 msgid ""
-"Insert 18333fig0525.png \n"
+"Insert 18333fig0525.png\n"
 "Figure 5-25. Merging contributed topic branches into long-term integration "
 "branches."
 msgstr ""
@@ -2061,7 +2061,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:799
 msgid ""
-"Insert 18333fig0526.png \n"
+"Insert 18333fig0526.png\n"
 "Figure 5-26. Example history before a cherry pick."
 msgstr ""
 
@@ -2087,7 +2087,7 @@ msgstr ""
 
 #: en/05-distributed-git/01-chapter5.markdown:811
 msgid ""
-"Insert 18333fig0527.png \n"
+"Insert 18333fig0527.png\n"
 "Figure 5-27. History after cherry-picking a commit on a topic branch."
 msgstr ""
 

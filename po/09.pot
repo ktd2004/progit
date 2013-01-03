@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-02 21:10+0900\n"
+"POT-Creation-Date: 2013-01-03 12:06+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:19
 msgid ""
-"\t$ ls \n"
+"\t$ ls\n"
 "\tHEAD\n"
 "\tbranches/\n"
 "\tconfig\n"
@@ -180,7 +180,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:57
 msgid ""
-"\t$ find .git/objects -type f \n"
+"\t$ find .git/objects -type f\n"
 "\t.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4"
 msgstr ""
 
@@ -218,7 +218,7 @@ msgstr ""
 #: en/09-git-internals/01-chapter9.markdown:69
 msgid ""
 "\t$ echo 'version 1' > test.txt\n"
-"\t$ git hash-object -w test.txt \n"
+"\t$ git hash-object -w test.txt\n"
 "\t83baae61804e65cc73a7201a7252750c76066a30"
 msgstr ""
 
@@ -229,7 +229,7 @@ msgstr ""
 #: en/09-git-internals/01-chapter9.markdown:75
 msgid ""
 "\t$ echo 'version 2' > test.txt\n"
-"\t$ git hash-object -w test.txt \n"
+"\t$ git hash-object -w test.txt\n"
 "\t1f7a7a472abf3dd9643fd615f6da379c4acb3e3a"
 msgstr ""
 
@@ -241,7 +241,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:81
 msgid ""
-"\t$ find .git/objects -type f \n"
+"\t$ find .git/objects -type f\n"
 "\t.git/objects/1f/7a7a472abf3dd9643fd615f6da379c4acb3e3a\n"
 "\t.git/objects/83/baae61804e65cc73a7201a7252750c76066a30\n"
 "\t.git/objects/d6/70460b4b4aece5915caf5c68d12f560a9fe3e4"
@@ -253,8 +253,8 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:88
 msgid ""
-"\t$ git cat-file -p 83baae61804e65cc73a7201a7252750c76066a30 > test.txt \n"
-"\t$ cat test.txt \n"
+"\t$ git cat-file -p 83baae61804e65cc73a7201a7252750c76066a30 > test.txt\n"
+"\t$ cat test.txt\n"
 "\tversion 1"
 msgstr ""
 
@@ -264,8 +264,8 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:94
 msgid ""
-"\t$ git cat-file -p 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a > test.txt \n"
-"\t$ cat test.txt \n"
+"\t$ git cat-file -p 1f7a7a472abf3dd9643fd615f6da379c4acb3e3a > test.txt\n"
+"\t$ cat test.txt\n"
 "\tversion 2"
 msgstr ""
 
@@ -328,7 +328,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:119
 msgid ""
-"Insert 18333fig0901.png \n"
+"Insert 18333fig0901.png\n"
 "Figure 9-1. Simple version of the Git data model."
 msgstr ""
 
@@ -398,8 +398,8 @@ msgstr ""
 #: en/09-git-internals/01-chapter9.markdown:143
 msgid ""
 "\t$ echo 'new file' > new.txt\n"
-"\t$ git update-index test.txt \n"
-"\t$ git update-index --add new.txt "
+"\t$ git update-index test.txt\n"
+"\t$ git update-index --add new.txt"
 msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:147
@@ -450,7 +450,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:167
 msgid ""
-"Insert 18333fig0902.png \n"
+"Insert 18333fig0902.png\n"
 "Figure 9-2. The content structure of your current Git data."
 msgstr ""
 
@@ -617,7 +617,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:244
 msgid ""
-"Insert 18333fig0903.png \n"
+"Insert 18333fig0903.png\n"
 "Figure 9-3. All the objects in your Git directory."
 msgstr ""
 
@@ -816,7 +816,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:329
 msgid ""
-"Insert 18333fig0904.png \n"
+"Insert 18333fig0904.png\n"
 "Figure 9-4. Git directory objects with branch head references included."
 msgstr ""
 
@@ -843,7 +843,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:338
 msgid ""
-"\t$ cat .git/HEAD \n"
+"\t$ cat .git/HEAD\n"
 "\tref: refs/heads/master"
 msgstr ""
 
@@ -853,7 +853,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:343
 msgid ""
-"\t$ cat .git/HEAD \n"
+"\t$ cat .git/HEAD\n"
 "\tref: refs/heads/test"
 msgstr ""
 
@@ -883,7 +883,7 @@ msgstr ""
 #: en/09-git-internals/01-chapter9.markdown:355
 msgid ""
 "\t$ git symbolic-ref HEAD refs/heads/test\n"
-"\t$ cat .git/HEAD \n"
+"\t$ cat .git/HEAD\n"
 "\tref: refs/heads/test"
 msgstr ""
 
@@ -942,7 +942,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:378
 msgid ""
-"\t$ cat .git/refs/tags/v1.1 \n"
+"\t$ cat .git/refs/tags/v1.1\n"
 "\t9585191f37f7b0fb9444f35a9bf50de191beadc2"
 msgstr ""
 
@@ -1016,7 +1016,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:412
 msgid ""
-"\t$ cat .git/refs/remotes/origin/master \n"
+"\t$ cat .git/refs/remotes/origin/master\n"
 "\tca82a6dff817ec66f44342007202690a93763949"
 msgstr ""
 
@@ -1066,7 +1066,7 @@ msgstr ""
 msgid ""
 "\t$ curl https://raw.github.com/mojombo/grit/master/lib/grit/repo.rb > "
 "repo.rb\n"
-"\t$ git add repo.rb \n"
+"\t$ git add repo.rb\n"
 "\t$ git commit -m 'added repo.rb'\n"
 "\t[master 484a592] added repo.rb\n"
 "\t 3 files changed, 459 insertions(+), 2 deletions(-)\n"
@@ -1239,7 +1239,7 @@ msgstr ""
 msgid ""
 "Here, the `9bc1d` blob, which if you remember was the first version of your "
 "repo.rb file, is referencing the `05408` blob, which was the second version "
-"of the file. The third column in the output is the size of the object's "
+"of the file. The third column in the output is the size of the object’s "
 "content, so you can see that the content of `05408` takes up 12K, but that "
 "of `9bc1d` only takes up 7 bytes. What is also interesting is that the "
 "second version of the file is the one that is stored intact, whereas the "
@@ -1464,7 +1464,7 @@ msgstr ""
 msgid ""
 "Because the refspec is `<src>:<dst>`, by leaving off the `<src>` part, this "
 "basically says to make the topic branch on the remote nothing, which deletes "
-"it. "
+"it."
 msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:615
@@ -1525,7 +1525,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:635
 msgid ""
-"You need to check out the `master` branch when you’ve completed the process. "
+"You need to check out the `master` branch when you’ve completed the process.\n"
 "At this point, you’re ready to start the walking process. Because your "
 "starting point is the `ca82a6` commit object you saw in the `info/refs` "
 "file, you start by fetching that:"
@@ -1927,8 +1927,8 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:786
 msgid ""
-"\t$ cat .git/packed-refs \n"
-"\t# pack-refs with: peeled \n"
+"\t$ cat .git/packed-refs\n"
+"\t# pack-refs with: peeled\n"
 "\tcac0cab538b970a37ea1e769cbbde608743bc96d refs/heads/experiment\n"
 "\tab1afef80fac8e34258ff41fc1b867c702daa24b refs/heads/master\n"
 "\tcac0cab538b970a37ea1e769cbbde608743bc96d refs/tags/v1.0\n"
@@ -2079,7 +2079,7 @@ msgstr ""
 #: en/09-git-internals/01-chapter9.markdown:857
 msgid ""
 "Cool — now you have a branch named `recover-branch` that is where your "
-"`master` branch used to be, making the first two commits reachable again. \n"
+"`master` branch used to be, making the first two commits reachable again.\n"
 "Next, suppose your loss was for some reason not in the reflog — you can "
 "simulate that by removing `recover-branch` and deleting the reflog. Now the "
 "first two commits aren’t reachable by anything:"
@@ -2177,7 +2177,7 @@ msgstr ""
 
 #: en/09-git-internals/01-chapter9.markdown:892
 msgid ""
-"\t$ git rm git.tbz2 \n"
+"\t$ git rm git.tbz2\n"
 "\trm 'git.tbz2'\n"
 "\t$ git commit -m 'oops - removed large tarball'\n"
 "\t[master da3f30d] oops - removed large tarball\n"
